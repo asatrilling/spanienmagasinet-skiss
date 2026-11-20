@@ -589,16 +589,16 @@ button.plan:hover .plan-ga i{transform:translateX(6px)}
 <section class="sektion" id="hitta-hjalp" style="background: #FBF9F4; border-top: 1px solid #E4DED3">
 <div class="wrap">
 <div class="sek-huvud">
-<div style="display: flex; flex-direction: column; gap: 10px"><p class="label guld">Svensktalande hjälp på plats</p><h2 style="font-size: 50px">Hitta hjälp i Spanien</h2></div>
-<p style="max-width: 44ch; color: #5F6968">Advokater, gestorías, mäklare och vård som pratar svenska. Utvalda av redaktionen.</p>
+<div style="display: flex; flex-direction: column; gap: 10px"><p class="label guld">Experter som kan Spanien</p><h2 style="font-size: 50px">Hjälp inför flytten</h2></div>
+<p style="max-width: 44ch; color: #5F6968">Advokater, skatterådgivare, mäklare och flyttfirmor här hemma som kan Spanien, så att du får hjälp innan du reser ner. Flera har kontor även på plats.</p>
 </div>
 <div class="hjalp-filter" role="group" aria-label="Välj kategori"><sc-for list="{{ hjFilter }}" as="f" hint-placeholder-count="6"><button type="button" class="{{ f.klass }}" aria-pressed="{{ f.vald }}" onClick="{{ f.pick }}">{{ f.t }}</button></sc-for></div>
 <div class="hjalp-grid">
 <sc-for list="{{ hjLista }}" as="h" hint-placeholder-count="6">
-<div class="hjalp-kort"><p class="label guld">{{ h.kat }}</p><h3 style="font-size: 24px">{{ h.namn }}</h3><p class="ort">{{ h.ort }}</p><span class="sv">Talar svenska</span><a href="#">Kontakta <i aria-hidden="true">→</i></a></div>
+<div class="hjalp-kort"><p class="label guld">{{ h.kat }}</p><h3 style="font-size: 24px">{{ h.namn }}</h3><p class="ort">{{ h.ort }}</p><span class="sv">Kan Spanien</span><a href="#">Kontakta <i aria-hidden="true">→</i></a></div>
 </sc-for>
 </div>
-<div class="hjalp-cta"><div style="display: flex; flex-direction: column; gap: 4px"><h3 style="font-size: 26px">Hjälper du svenskar i Spanien?</h3><p style="color: #5F6968">Synas här och i Marisols tips hela året, från [pris] kr per år.</p></div><a href="#annonsera" class="btn btn-guld">Bli listad</a></div>
+<div class="hjalp-cta"><div style="display: flex; flex-direction: column; gap: 4px"><h3 style="font-size: 26px">Hjälper du svenskar att flytta till Spanien?</h3><p style="color: #5F6968">Synas här och i Marisols tips hela året, från [pris] kr per år.</p></div><a href="#annonsera" class="btn btn-guld">Bli listad</a></div>
 </div>
 </section>
 
@@ -882,7 +882,7 @@ button.plan:hover .plan-ga i{transform:translateX(6px)}
 <div class="wrap" style="padding-top: 64px; padding-bottom: 40px">
 <div class="fot-grid">
 <div><p class="logo logo-fot"><span class="logo-ord">spa<span class="enye">n<svg class="tilde" viewBox="0 0 100 44" aria-hidden="true"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#EF4650" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span>ıen</span><span class="logo-mag">Magasinet</span></p><p style="margin-top: 14px; max-width: 60ch">Kultur, golf, mat &amp; vin för dig som längtar till Spanien.</p></div>
-<nav aria-label="Läs"><h4>Läs</h4><a href="#senaste">Senaste numret</a><a href="#teman">Teman</a><a href="#resor">Läsarresor</a><a href="#hitta-hjalp">Hitta hjälp i Spanien</a><a href="#">Om oss</a></nav>
+<nav aria-label="Läs"><h4>Läs</h4><a href="#senaste">Senaste numret</a><a href="#teman">Teman</a><a href="#resor">Läsarresor</a><a href="#hitta-hjalp">Hjälp inför flytten</a><a href="#">Om oss</a></nav>
 <nav aria-label="Prenumerera"><h4>Prenumerera</h4><a href="#numret">Digital eller tryckt</a><a href="#ge-bort">Ge bort</a><a href="#">Kundservice</a></nav>
 <nav aria-label="Följ oss"><h4>Följ oss</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Svenska Magasinet</a></nav>
 </div>
@@ -947,14 +947,14 @@ var FRAGOR = {
   q5: [{ id: 'a', t: 'Gärna svenska grannar', p: { blanca: 2, sol: 1, kanarie: 1 } }, { id: 'b', t: 'Hellre helt spanskt', p: { mallorca: 2 } }]
 };
 var HJALP = [
-  { kat: 'Advokat', namn: '[Advokatbyrå]', ort: 'Marbella, Costa del Sol' },
-  { kat: 'Gestoría', namn: '[Gestoría]', ort: 'Fuengirola, Costa del Sol' },
-  { kat: 'Mäklare', namn: '[Mäklare]', ort: 'Torrevieja, Costa Blanca' },
-  { kat: 'Veterinär', namn: '[Veterinärklinik]', ort: 'Nerja, Costa del Sol' },
-  { kat: 'Vård', namn: '[Tandläkare]', ort: 'Alicante, Costa Blanca' },
-  { kat: 'Skatt & bank', namn: '[Skatterådgivare]', ort: 'Palma, Mallorca' }
+  { kat: 'Advokat', namn: '[Advokatbyrå]', ort: 'Stockholm och Marbella' },
+  { kat: 'Skatt & pension', namn: '[Skatterådgivare]', ort: 'Göteborg' },
+  { kat: 'Mäklare', namn: '[Mäklare]', ort: 'Stockholm och Torrevieja' },
+  { kat: 'Försäkring', namn: '[Försäkringsbolag]', ort: 'Hela Sverige' },
+  { kat: 'Flytt', namn: '[Flyttfirma]', ort: 'Malmö, flyttar till hela Spanien' },
+  { kat: 'Veterinär', namn: '[Veterinärklinik]', ort: 'Uppsala' }
 ];
-var HJALP_KAT = ['Alla', 'Advokat', 'Gestoría', 'Mäklare', 'Veterinär', 'Vård', 'Skatt & bank'];
+var HJALP_KAT = ['Alla', 'Advokat', 'Skatt & pension', 'Mäklare', 'Försäkring', 'Flytt', 'Veterinär'];
 var MK_BUDGET = ['Under 2 milj kr', '2–4 milj kr', 'Över 4 milj kr'];
 var LOLA = [
   { ord: ['hund', ' katt', 'husdjur', 'valp', 'pälskling'], svar: 'Pälsklingen ska förstås med! Börja med chip, rabiesvaccin och EU-pass i god tid. Och lär dig känna igen tallprocessionsspinnaren, larverna som är farliga för hundar på vårvintern. Veterinären går igenom allt i guiden.', l1: { t: 'Pälsklingen', href: '#flytta' }, l2: { t: 'Fråga veterinären', href: '#flytta' } },
@@ -963,7 +963,7 @@ var LOLA = [
   { ord: ['mat', 'vin', 'recept', 'tapas', 'paella', 'restaurang', 'äta'], svar: 'Då ska du in under Mat och vin, där finns bordet, bodegan och recept att laga hemma i Sverige när längtan blir för stor.', l1: { t: 'Mat och vin', href: '#teman' }, l2: { t: 'Senaste numret', href: '#senaste' } },
   { ord: ['jul', 'present', 'julklapp', 'ge bort', 'gåva'], svar: 'Ge bort Spanien! En presentprenumeration med fyra nummer hem i brevlådan, och ett gåvobrev att lägga under granen. 490 kronor för ett helt år.', l1: { t: 'Ge bort i jul', href: '#ge-bort' } },
   { ord: ['prenumer', 'tidning', 'pris', 'kostar', 'readly', 'digital'], svar: 'Du kan läsa oss digitalt för 195 kronor om året, eller få tidningen hem i brevlådan för 490 kronor. Fyra nummer om året, att läsa långsamt.', l1: { t: 'Prenumerera', href: '#numret' } },
-  { ord: ['gestor', 'tandläk', 'läkare', 'hjälp på plats', 'svensktalande', 'hantverk', 'elektriker', 'bilverkstad'], svar: 'Det finns gott om svensktalande hjälp på plats. Vi har samlat advokater, gestorías, mäklare, veterinärer och vård som redaktionen har valt ut.', l1: { t: 'Hitta hjälp i Spanien', href: '#hitta-hjalp' } },
+  { ord: ['gestor', 'flyttfirma', 'flytthjälp', 'tandläk', 'läkare', 'hjälp på plats', 'svensktalande', 'hantverk', 'elektriker', 'bilverkstad'], svar: 'Det finns gott om hjälp redan här hemma. Vi har samlat advokater, skatterådgivare, mäklare och flyttfirmor som kan Spanien, flera med kontor även på plats.', l1: { t: 'Hjälp inför flytten', href: '#hitta-hjalp' } },
   { ord: ['gruppresa', 'läsarresa', 'följa med', 'res med', 'provbo', 'golfresa', 'vinresa'], svar: 'Följ med oss! Vi gör små läsarresor tillsammans med Polyresor: en golfvecka, en mat- och vinvecka och en månad att provbo på Solkusten.', l1: { t: 'Läsarresor', href: '#resor' } },
   { ord: ['annons', 'synas', 'marknadsför', 'samarbete', 'partner'], svar: 'Vad kul att du vill synas hos oss! Du kan boka och betala en annons direkt, eller höra av dig om ett partnerpaket.', l1: { t: 'Annonsera', href: '#annonsera' } },
   { ord: ['resa', 'semester', 'málaga', 'malaga', 'sevilla', 'granada', 'strand', 'se ', 'göra', 'tips', 'golf', 'kultur'], svar: 'Åh, då har jag läsning åt dig. I senaste numret skriver vi om Maro, sol och bad, och om de spanska dansernas historia. Och i Upptäck hittar du Spanien ämne för ämne.', l1: { t: 'Senaste numret', href: '#senaste' }, l2: { t: 'Upptäck', href: '#teman' } }
