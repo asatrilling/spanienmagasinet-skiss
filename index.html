@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Spanien Magasinet – förslag på ny startsida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&amp;family=Jost:wght@300;400;500&amp;family=Pinyon+Script&amp;display=swap">
+<style>
+body{margin:0;background:#FCFBF8}
+a{color:#1E272A}a:hover{color:#7A5C1E}
+.sm{--kalk:#FCFBF8;--sand:#F2EDE4;--ink:#1E272A;--mute:#5F6968;--hav:#1F5F8B;--guld:#A98636;--guld-text:#7F6224;--guld-ljus:#D9BE7C;--line:#E4DED3;font-family:'Jost','Avenir Next',Arial,sans-serif;color:var(--ink);background:var(--kalk);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.sm *{box-sizing:border-box}
+.sm h1,.sm h2,.sm h3{font-family:'Bodoni Moda','Didot',Georgia,serif;font-weight:400;margin:0;line-height:1.1;text-wrap:balance}
+.sm p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.label{font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:var(--mute)}
+.label.guld{color:var(--guld-text)}
+.skrift{font-family:'Pinyon Script','Snell Roundhand',cursive;font-weight:400;line-height:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 30px;border-radius:999px;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;text-decoration:none;white-space:nowrap;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-guld{background:#8C6D28;color:#FFFFFF}.btn-guld:hover{background:#735920;color:#FFFFFF}
+.btn-ljus{background:#FFFFFF;color:#1E272A}.btn-ljus:hover{background:#F2EDE4;color:#1E272A}
+.btn-linje{color:#1E272A;box-shadow:inset 0 0 0 1px #1E272A}.btn-linje:hover{color:#1E272A;background:#F2EDE4}
+.btn-linje-ljus{color:#FFFFFF;box-shadow:inset 0 0 0 1px rgba(255,255,255,.75)}.btn-linje-ljus:hover{color:#FFFFFF;background:rgba(255,255,255,.1)}
+.lank{font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--guld);padding:12px 0 3px}
+.koncept{background:#1E272A;color:#FCFBF8;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.06em}
+.topp{border-bottom:1px solid var(--line);background:var(--kalk)}
+.logo-rad{display:flex;align-items:flex-end;gap:28px;padding:16px 0 16px}
+.logo-rad .logo{order:1;margin-right:auto;margin-top:0}
+.logo-rad .vanster{order:2}
+.logo-rad .hoger{order:3}
+.vanster{display:flex;gap:22px}
+.vanster a,.hoger .in{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);text-decoration:none;padding:12px 0}
+.hoger{display:flex;justify-content:flex-end;gap:22px;align-items:center;align-self:center;order:3}
+.logo{display:inline-flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:var(--ink);font-size:140px;line-height:1;white-space:nowrap}
+.logo:hover{color:var(--ink)}
+.logo-tag{font-family:'Jost',sans-serif;font-size:.16em;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin:0 0 .5em .1em}
+.logo-ord{font-family:'Bodoni Moda',Georgia,serif;font-weight:500;font-size:1.22em;color:#D9822B;line-height:.82;letter-spacing:-.005em}
+.logo-mag{font-family:'Jost',sans-serif;font-weight:400;font-size:.22em;letter-spacing:.42em;text-transform:uppercase;color:var(--ink);margin:-.05em 0 0 3.7em}
+.logo-fot{font-size:86px;margin:0}
+.logo-fot .logo-tag{color:#A8A69E}.logo-fot .logo-ord{color:#F2B25C}.logo-fot .logo-mag{color:#F4EFE6}
+.enye{position:relative;display:inline-block}
+.tilde{position:absolute;left:50%;top:.1em;width:.43em;height:.19em;margin-left:-.215em;overflow:visible}
+.meny{display:flex;justify-content:flex-start;gap:34px;padding:18px 0 16px;flex-wrap:wrap}
+.meny a{font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--ink);padding:8px 0 4px;border-bottom:1px solid transparent}
+.meny a:hover{border-color:var(--guld);color:var(--ink)}
+.meny a.jul{color:#8A1C2B}.meny a.jul:hover{border-color:#8A1C2B;color:#8A1C2B}
+.hero{position:relative;margin-top:28px;border-radius:2px;overflow:hidden;height:720px}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%;animation:andas 18s ease-in-out infinite alternate}
+@keyframes andas{from{transform:scale(1)}to{transform:scale(1.05)}}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,21,23,0) 40%,rgba(14,21,23,.28) 65%,rgba(14,21,23,.7) 100%),linear-gradient(90deg,rgba(14,21,23,.28),rgba(14,21,23,0) 55%)}
+.hero-text{position:absolute;left:0;right:0;bottom:0;padding:56px;color:#FFFFFF;display:flex;flex-direction:column;gap:14px}
+.hero-text h1,.hero-text p,.hero-text .skrift{text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.sektion{padding:110px 0}
+.sek-huvud{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.reportage{display:grid;grid-template-columns:1.35fr 1fr;gap:40px}
+.rep{display:flex;flex-direction:column;gap:16px;text-decoration:none;color:var(--ink)}
+.rep:hover{color:var(--ink)}
+.rep .bild{overflow:hidden;border-radius:2px;box-shadow:0 18px 40px -22px rgba(30,39,42,.45);transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
+.rep:hover .bild{transform:translateY(-6px);box-shadow:0 34px 60px -26px rgba(30,39,42,.55)}
+.smal .ram{position:relative;overflow:hidden;border-radius:2px;box-shadow:0 16px 34px -20px rgba(30,39,42,.45);transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
+.smal:hover .ram{transform:translateY(-6px);box-shadow:0 30px 52px -24px rgba(30,39,42,.55)}
+.smal .ram img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.smal:hover .ram img{transform:scale(1.05)}
+.rep .bild{position:relative}
+.las{position:absolute;left:50%;top:50%;width:120px;height:54px;margin:-27px 0 0 -60px;display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(.6) rotate(-6deg);transition:opacity .45s,transform .5s cubic-bezier(.2,.7,.2,1);pointer-events:none;filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
+.las-tilde{width:100%;height:100%;overflow:visible}
+.rep:hover .las,.smal:hover .las,.rep:focus-visible .las,.smal:focus-visible .las{opacity:1;transform:scale(1) rotate(0)}
+.rep h3,.smal h3{background:linear-gradient(#A98636,#A98636) 0 100%/0 1px no-repeat;transition:background-size .6s cubic-bezier(.2,.7,.2,1);display:inline;padding-bottom:2px}
+.rep:hover h3,.smal:hover h3,.rep:focus-visible h3,.smal:focus-visible h3{background-size:100% 1px}
+.vidare{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7F6224;font-weight:500;margin-top:2px}
+.vidare i{font-style:normal;display:inline-block;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.rep:hover .vidare i,.smal:hover .vidare i,.rep:focus-visible .vidare i,.smal:focus-visible .vidare i{transform:translateX(8px)}
+.rep:focus-visible,.smal:focus-visible{outline:2px solid #A98636;outline-offset:6px}
+.rep .bild img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.rep:hover .bild img{transform:scale(1.04)}
+.rep .rad{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.rep p{color:var(--mute)}
+.smala{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
+.smal{display:flex;flex-direction:column;gap:12px;padding-top:18px;border-top:2px solid var(--ink);text-decoration:none;color:var(--ink)}
+.smal:hover h3{color:var(--hav)}
+.smal img{width:100%;height:220px;object-fit:cover;display:block;border-radius:2px}
+.citat{background:#1E272A;color:#F4EFE6;text-align:center;padding:120px 0}
+.citat-bild{position:relative;height:620px;overflow:hidden;color:#FFFFFF}
+.citat-bild img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.citat-bild .slöja{position:absolute;inset:0;background:rgba(14,21,23,.38)}
+.rand{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.spar{display:flex;gap:18px;width:max-content;animation:snurra 60s linear infinite}
+.rand:hover .spar,.rand:focus-within .spar{animation-play-state:paused}
+@keyframes snurra{to{transform:translateX(calc(-50% - 9px))}}
+.tema{position:relative;display:block;flex:none;width:320px;height:440px;overflow:hidden;border-radius:2px;background:var(--kalk);text-decoration:none}
+.tema .sponsrad{position:absolute;left:14px;top:14px;padding:5px 11px;border-radius:999px;background:rgba(252,251,248,.92);color:#1E272A;font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.annons-markering{display:flex;justify-content:space-between;gap:10px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);margin-bottom:8px}
+.billboard{display:grid;grid-template-columns:1.1fr 1fr;min-height:300px;border-radius:4px;overflow:hidden;background:var(--sand);text-decoration:none;color:var(--ink)}
+.billboard:hover{color:var(--ink)}
+.billboard img{width:100%;height:100%;object-fit:cover;object-position:50% 70%;display:block}
+.annonsbricka{position:absolute;left:12px;top:12px;background:var(--kalk);color:var(--ink);font-size:10px;letter-spacing:.22em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.format-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.format{border:1px solid var(--line);border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:8px;background:#FFFFFF}
+.format p{color:var(--mute);font-size:15px}
+.fpris{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.fpris b{font-family:'Bodoni Moda',Georgia,serif;font-weight:400;font-size:26px}
+.fpris span{font-size:13px;color:var(--mute)}
+.siffror{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;align-items:end}
+.siffra b{display:block;font-family:'Bodoni Moda',Georgia,serif;font-weight:400;font-size:46px;line-height:1;color:#B8741F}
+.siffra span{font-size:14px;color:var(--mute)}
+@media (prefers-reduced-motion: reduce){.spar{animation:none}.rand{overflow-x:auto}}
+.format.vald{border-color:#8C6D28;box-shadow:inset 0 0 0 1px #8C6D28}
+.format button{cursor:pointer;border:0}
+.bokning{margin-top:36px;background:#FFFFFF;border:1px solid var(--line);border-radius:10px;box-shadow:0 40px 80px -50px rgba(30,39,42,.45);overflow:hidden;scroll-margin-top:24px}
+.bok-topp{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:26px 32px 18px;border-bottom:1px solid var(--line)}
+.stang{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#FFFFFF;color:#5F6968;font-size:24px;line-height:1;cursor:pointer}
+.stegrad{display:flex;gap:6px;margin-top:16px}
+.stegdel{flex:1;height:3px;border-radius:3px;background:var(--line)}
+.stegdel.gjord{background:#A98636}
+.bok-kropp{padding:28px 32px;display:flex;flex-direction:column;gap:16px}
+.pillgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.val{display:flex;justify-content:space-between;align-items:center;gap:14px;text-align:left;border:1px solid var(--line);border-radius:8px;padding:14px 16px;background:#FFFFFF;color:#1E272A;font:inherit;cursor:pointer;min-height:56px}
+.val b{display:block;font-weight:500}
+.val small{display:block;color:#5F6968;font-size:13px;line-height:1.4}
+.val .p{font-family:'Bodoni Moda',Georgia,serif;font-size:18px;white-space:nowrap}
+.val.vald{border-color:#8C6D28;background:#FBF3E0;box-shadow:inset 0 0 0 1px #8C6D28}
+.pillgrid .val{flex-direction:column;align-items:flex-start;justify-content:center;gap:2px}
+.tips{font-size:14px;color:#7F6224}
+.uppladd{display:flex;flex-direction:column;gap:10px;border:1.5px dashed #CDBEA4;border-radius:8px;padding:22px;text-align:center;color:#5F6968;font-size:15px;background:#FBF8F2;cursor:pointer}
+.uppladd input{align-self:center;max-width:100%;font:inherit;font-size:14px}
+.falt-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.falt-grid label{display:flex;flex-direction:column;gap:6px;font-size:13px;color:#5F6968}
+.falt-grid label.hel{grid-column:1/-1}
+.falt-grid input{font:inherit;font-size:16px;color:#1E272A;background:#FFFFFF;border:1px solid #D9D2C4;border-radius:6px;padding:12px 14px;min-height:46px}
+.falt-grid input:focus-visible,.val:focus-visible,.stang:focus-visible,.btn:focus-visible{outline:2px solid #A98636;outline-offset:2px}
+.oversikt{border:1px solid var(--line);border-radius:8px}
+.orad{display:flex;justify-content:space-between;gap:14px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:15px}
+.orad span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.orad.total{border-bottom:0;font-weight:500;font-size:17px}
+.betgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.trygg{font-size:13px;color:#5F6968}
+.fel{color:#9C3D1E;font-size:14px}
+.bok-fot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:18px 32px;border-top:1px solid var(--line);background:#FCFBF8}
+.summa{font-size:13px;color:#5F6968}
+.summa b{display:block;font-family:'Bodoni Moda',Georgia,serif;font-weight:400;font-size:26px;color:#1E272A}
+.klart{text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px;padding:16px 0}
+.klart .ring{width:68px;height:68px;border-radius:50%;background:#FBF3E0;color:#8C6D28;display:flex;align-items:center;justify-content:center}
+.klart .nr{font-family:'Bodoni Moda',Georgia,serif;font-size:20px;letter-spacing:.08em;border:1px solid var(--line);border-radius:999px;padding:6px 20px}
+@media (max-width:760px){.pillgrid,.betgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.falt-grid{grid-template-columns:1fr}.bok-topp,.bok-kropp,.bok-fot{padding-left:18px;padding-right:18px}}
+.tema img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.tema:hover img{transform:scale(1.05)}
+.tema span{position:absolute;left:0;right:0;bottom:0;padding:70px 22px 24px;color:#FFFFFF;background:linear-gradient(180deg,rgba(14,21,23,0),rgba(14,21,23,.75))}
+.tema b{display:block;font-family:'Bodoni Moda',Georgia,serif;font-weight:400;font-size:26px;line-height:1.1}
+.tema small{display:block;margin-top:6px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#E6CF96}
+.hej-bild{position:relative;min-height:780px;overflow:hidden;display:flex;align-items:center}
+.hej-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 40%}
+.hej-bild::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,21,23,.28),rgba(14,21,23,0) 60%);pointer-events:none}
+.hej-inne{position:relative;z-index:1;width:100%;padding-top:130px;padding-bottom:90px}
+.hej-kort{position:relative;max-width:540px;background:rgba(252,251,248,.95);border-radius:4px;padding:120px 48px 44px;display:flex;flex-direction:column;gap:18px;box-shadow:0 40px 80px -40px rgba(0,0,0,.55)}
+.hej-portratt{position:absolute;top:-110px;left:44px;width:210px;height:210px;border-radius:50%;padding:8px;background:#FCFBF8;border:1px solid #C9A227;box-shadow:0 24px 48px -24px rgba(0,0,0,.5)}
+@media (max-width:640px){.hej-kort{padding:96px 22px 30px}.hej-portratt{width:160px;height:160px;top:-80px;left:22px}.hej-inne{padding-top:110px}}
+.hej{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+.hej img{width:100%;max-width:440px;aspect-ratio:1;justify-self:center;border-radius:50%;padding:10px;border:1px solid #C9A227;box-shadow:0 30px 60px -34px rgba(30,39,42,.5)}
+.hej{grid-template-columns:1fr 1.1fr}
+.lasare{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.lasare figure{margin:0;display:flex;flex-direction:column;gap:16px;padding-top:22px;border-top:1px solid var(--guld)}
+.gava{background:#2A0A10;color:#F4EFE6}
+.gava-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.gava-grid img{width:100%;max-width:520px;justify-self:center;border-radius:2px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+.numret{background:var(--sand)}
+.numret-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.omslag{position:relative;height:540px}
+.omslag img{position:absolute;width:52%;border-radius:2px;box-shadow:0 30px 50px -28px rgba(0,0,0,.55);transition:transform .5s}
+.omslag .o1{left:2%;top:9%;transform:rotate(-6deg)}
+.omslag .o2{left:44%;top:6%;transform:rotate(5deg)}
+.omslag:hover .o1{transform:rotate(-9deg) translateX(-10px)}
+.omslag:hover .o2{transform:rotate(8deg) translateX(10px)}
+.planer{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0 22px}
+.plan{border:1px solid var(--line);border-radius:4px;padding:22px;background:#FFFFFF;display:flex;flex-direction:column;gap:8px}
+.plan.vald{border-color:#8C6D28;box-shadow:inset 0 0 0 1px #8C6D28}
+button.plan{font:inherit;color:#1E272A;text-align:left;cursor:pointer;transition:transform .3s,box-shadow .3s,border-color .3s}
+button.plan:hover{transform:translateY(-3px);border-color:#8C6D28;box-shadow:0 18px 36px -22px rgba(30,39,42,.45)}
+button.plan:focus-visible{outline:2px solid #A98636;outline-offset:3px}
+.plan-ga{margin-top:6px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:#7F6224}
+.plan-ga i{font-style:normal;display:inline-block;transition:transform .3s}
+button.plan:hover .plan-ga i{transform:translateX(6px)}
+.plan b{font-family:'Bodoni Moda',Georgia,serif;font-weight:400;font-size:40px;line-height:1}
+.betal{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.betal span{font-size:12px;letter-spacing:.06em;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:#FFFFFF;color:var(--ink)}
+.partner-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.partner{height:96px;border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:13px;letter-spacing:.08em}
+.fot{background:#1E272A;color:#CFC9BE;font-size:15px}
+.fot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px}
+.fot h4{font-family:'Jost',sans-serif;font-weight:500;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#D9BE7C;margin:0 0 14px}
+.fot a{display:block;color:#CFC9BE;text-decoration:none;padding:5px 0}.fot a:hover{color:#FFFFFF}
+@media (prefers-reduced-motion: reduce){.hero img{animation:none}}
+@media (max-width:1000px){
+.vanster,.hoger .in{display:none}
+.reportage,.hej,.gava-grid,.numret-grid{grid-template-columns:1fr;gap:44px}
+.smala,.lasare{grid-template-columns:1fr}
+.tema{width:240px;height:330px}
+.billboard{grid-template-columns:1fr}.billboard img{height:240px}
+.format-grid{grid-template-columns:1fr 1fr}
+.siffror{grid-template-columns:1fr 1fr}.siffror > :first-child{grid-column:1/-1}
+.partner-grid{grid-template-columns:repeat(2,1fr)}
+.fot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+.wrap{padding:0 16px}
+.logo-rad{grid-template-columns:minmax(0,1fr) auto}
+.logo{font-size:64px}
+.logo-tag{font-size:.2em;letter-spacing:.14em}
+.meny{justify-content:flex-start;gap:20px;flex-wrap:nowrap;overflow-x:auto}
+.hero{height:620px}.hero-text{padding:24px}
+.hero-text h1{font-size:40px !important}
+.citat-bild p{font-size:34px !important}
+.sektion{padding:64px 0}
+.planer{grid-template-columns:1fr}
+.format-grid{grid-template-columns:1fr}
+.omslag{height:360px}
+.fot-grid{grid-template-columns:1fr}
+}
+
+.vader{background:var(--sand);border-bottom:1px solid var(--line)}
+.vader .wrap{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px;font-size:15px;color:var(--ink)}
+.vader .ort{display:inline-flex;align-items:baseline;gap:8px}
+.vader .grad{font-family:'Bodoni Moda',Georgia,serif;font-size:22px;line-height:1}
+.vader .varm .grad{color:#B8741F}
+.vader .kall .grad{color:#5F7F93}
+.vader .mellan{width:40px;height:1px;background:var(--guld)}
+.vader small{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.bo{background:var(--sand)}
+.bo-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start}
+.fragor{display:flex;flex-direction:column;gap:26px}
+.fraga{display:flex;flex-direction:column;gap:10px}
+.fraga .q{font-family:'Bodoni Moda',Georgia,serif;font-size:22px;line-height:1.25}
+.fraga .q i{font-style:normal;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.2em;color:var(--guld-text);margin-right:10px}
+.svar{display:flex;gap:10px;flex-wrap:wrap}
+.svar .val{min-height:48px;padding:10px 18px;border-radius:999px}
+.resultat{position:sticky;top:24px;background:#FFFFFF;border-radius:6px;overflow:hidden;box-shadow:0 40px 80px -50px rgba(30,39,42,.5)}
+.resultat .rbild{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--line)}
+.resultat .rbild img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.resultat .rtext{padding:30px 32px 32px;display:flex;flex-direction:column;gap:14px}
+.resultat .fakta{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px}
+.resultat .fakta b{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--guld-text)}
+.resultat .tom{padding:44px 32px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.mataren{height:3px;background:var(--line);border-radius:3px;overflow:hidden;width:100%}
+.mataren span{display:block;height:100%;background:#8C6D28;transition:width .3s}
+.stegen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;counter-reset:steg}
+.steg{position:relative;display:flex;flex-direction:column;gap:12px;padding:30px 28px 28px;background:#FFFFFF;border:1px solid var(--line);border-radius:4px;text-decoration:none;color:var(--ink);transition:transform .25s,box-shadow .25s}
+.steg:hover{color:var(--ink);transform:translateY(-3px);box-shadow:0 30px 60px -40px rgba(30,39,42,.5)}
+.steg .nr{font-family:'Bodoni Moda',Georgia,serif;font-size:46px;line-height:1;color:var(--guld)}
+.steg p{color:var(--mute);font-size:16px}
+.steg .vidare{margin-top:auto}
+.expert{margin-top:40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:30px 34px;border-radius:4px;background:#1E272A;color:#F4EFE6}
+.expert p{color:rgba(244,239,230,.8)}
+@media (max-width:1000px){.bo-grid{grid-template-columns:1fr}.resultat{position:static}.stegen{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.stegen{grid-template-columns:1fr}.vader .mellan{display:none}.vader .wrap{gap:10px 18px}}
+.steg.husdjur{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:12px 36px;align-items:center;background:#FBF3E0;border-color:#E6CF96}
+.husdjur .lista{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:#3A4446;margin-top:6px}
+.husdjur .lista span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#A98636;margin-right:9px;vertical-align:middle}
+@media (max-width:1000px){.steg.husdjur{grid-template-columns:1fr}}
+.hund-sida{display:flex;flex-direction:column;align-items:center;gap:10px}
+.hund-bild{width:250px;height:250px;border-radius:50%;object-fit:cover;padding:7px;background:#FCFBF8;border:1px solid #C9A227;box-shadow:0 24px 48px -26px rgba(30,39,42,.55);transition:transform .4s}
+.steg.husdjur:hover .hund-bild{transform:rotate(-4deg) scale(1.03)}
+@media (max-width:1000px){.hund-sida{align-items:flex-start}}
+.gava{position:relative;overflow:hidden}
+.gava-grid{position:relative;z-index:1}
+.gava-grid img.gava-bild{box-shadow:none;border-radius:0;max-width:600px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+.gava::before,.gava::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none}
+.gava::before{background-image:radial-gradient(circle at 17% 72%,rgba(255,255,255,0.86) 2.0px,transparent 3.0px),radial-gradient(circle at 32% 15%,rgba(255,255,255,0.73) 1.6px,transparent 2.6px),radial-gradient(circle at 83% 48%,rgba(255,255,255,0.59) 1.9px,transparent 2.9px),radial-gradient(circle at 3% 49%,rgba(255,255,255,0.85) 1.5px,transparent 2.5px),radial-gradient(circle at 0% 89%,rgba(255,255,255,0.84) 1.5px,transparent 2.5px),radial-gradient(circle at 29% 75%,rgba(255,255,255,0.91) 2.1px,transparent 3.1px),radial-gradient(circle at 3% 2%,rgba(255,255,255,0.77) 1.0px,transparent 2.0px),radial-gradient(circle at 48% 87%,rgba(255,255,255,0.72) 1.3px,transparent 2.3px),radial-gradient(circle at 3% 67%,rgba(255,255,255,0.73) 1.3px,transparent 2.3px),radial-gradient(circle at 63% 70%,rgba(255,255,255,0.64) 1.3px,transparent 2.3px),radial-gradient(circle at 28% 97%,rgba(255,255,255,0.67) 1.6px,transparent 2.6px),radial-gradient(circle at 2% 53%,rgba(255,255,255,0.77) 2.0px,transparent 3.0px),radial-gradient(circle at 82% 12%,rgba(255,255,255,0.95) 1.2px,transparent 2.2px),radial-gradient(circle at 37% 15%,rgba(255,255,255,0.91) 1.9px,transparent 2.9px),radial-gradient(circle at 91% 64%,rgba(255,255,255,0.72) 2.1px,transparent 3.1px),radial-gradient(circle at 85% 24%,rgba(255,255,255,0.79) 1.4px,transparent 2.4px),radial-gradient(circle at 63% 64%,rgba(255,255,255,0.89) 1.5px,transparent 2.5px),radial-gradient(circle at 61% 31%,rgba(255,255,255,0.71) 1.9px,transparent 2.9px),radial-gradient(circle at 85% 22%,rgba(255,255,255,0.90) 1.4px,transparent 2.4px),radial-gradient(circle at 99% 86%,rgba(255,255,255,0.58) 1.9px,transparent 2.9px),radial-gradient(circle at 84% 65%,rgba(255,255,255,0.62) 1.1px,transparent 2.1px),radial-gradient(circle at 50% 47%,rgba(255,255,255,0.56) 1.6px,transparent 2.6px),radial-gradient(circle at 5% 39%,rgba(255,255,255,0.94) 1.8px,transparent 2.8px),radial-gradient(circle at 75% 74%,rgba(255,255,255,0.62) 1.5px,transparent 2.5px),radial-gradient(circle at 64% 29%,rgba(255,255,255,0.86) 2.2px,transparent 3.2px),radial-gradient(circle at 69% 70%,rgba(255,255,255,0.76) 1.3px,transparent 2.3px),radial-gradient(circle at 73% 45%,rgba(255,255,255,0.66) 1.6px,transparent 2.6px),radial-gradient(circle at 70% 77%,rgba(255,255,255,0.55) 2.1px,transparent 3.1px);background-size:420px 420px;animation:sno1 16s linear infinite;opacity:.9}
+.gava::after{background-image:radial-gradient(circle at 7% 11%,rgba(255,255,255,0.88) 1.2px,transparent 2.2px),radial-gradient(circle at 94% 85%,rgba(255,255,255,0.65) 3.0px,transparent 4.0px),radial-gradient(circle at 27% 77%,rgba(255,255,255,0.82) 1.1px,transparent 2.1px),radial-gradient(circle at 55% 81%,rgba(255,255,255,0.84) 1.9px,transparent 2.9px),radial-gradient(circle at 65% 47%,rgba(255,255,255,0.73) 2.3px,transparent 3.3px),radial-gradient(circle at 34% 4%,rgba(255,255,255,0.70) 3.1px,transparent 4.1px),radial-gradient(circle at 40% 48%,rgba(255,255,255,0.90) 2.0px,transparent 3.0px),radial-gradient(circle at 21% 71%,rgba(255,255,255,0.64) 1.4px,transparent 2.4px),radial-gradient(circle at 22% 41%,rgba(255,255,255,0.75) 1.4px,transparent 2.4px),radial-gradient(circle at 46% 65%,rgba(255,255,255,0.62) 2.6px,transparent 3.6px),radial-gradient(circle at 57% 53%,rgba(255,255,255,0.91) 2.8px,transparent 3.8px),radial-gradient(circle at 97% 46%,rgba(255,255,255,0.69) 2.9px,transparent 3.9px),radial-gradient(circle at 57% 20%,rgba(255,255,255,0.71) 3.3px,transparent 4.3px),radial-gradient(circle at 94% 59%,rgba(255,255,255,0.65) 2.6px,transparent 3.6px),radial-gradient(circle at 35% 63%,rgba(255,255,255,0.88) 2.2px,transparent 3.2px),radial-gradient(circle at 45% 84%,rgba(255,255,255,0.91) 3.1px,transparent 4.1px);background-size:640px 640px;animation:sno2 11s linear infinite;filter:blur(.6px)}
+@keyframes sno1{from{background-position:0 0}to{background-position:60px 420px}}
+@keyframes sno2{from{background-position:0 0}to{background-position:-80px 640px}}
+@media (prefers-reduced-motion: reduce){.gava::before,.gava::after{animation:none}}
+
+.lola-sek{background:linear-gradient(180deg,#FCFBF8,#F2EDE4)}
+.lola-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.lola-avatar{width:56px;height:56px;border-radius:50%;background:#FCFBF8;border:1px solid #C9A227;display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 10px 24px -14px rgba(30,39,42,.5)}
+.lola-avatar svg{width:32px;height:15px;overflow:visible}
+.lola-avatar.liten{width:34px;height:34px}.lola-avatar.liten svg{width:20px;height:9px}
+.chatt{background:#FFFFFF;border-radius:14px;box-shadow:0 50px 90px -50px rgba(30,39,42,.55);border:1px solid var(--line);display:flex;flex-direction:column;height:600px;overflow:hidden}
+.chatt-topp{display:flex;align-items:center;gap:14px;padding:18px 22px;border-bottom:1px solid var(--line);background:#FCFBF8}
+.chatt-topp b{display:block;font-family:'Bodoni Moda',Georgia,serif;font-weight:400;font-size:22px;line-height:1.1}
+.chatt-topp small{font-size:12px;color:var(--mute);letter-spacing:.04em}
+.ai-bricka{margin-left:auto;font-size:10px;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--mute)}
+.chatt-lista{flex:1;overflow-y:auto;padding:22px;display:flex;flex-direction:column;gap:14px;scroll-behavior:smooth}
+.msg{display:flex;gap:10px;align-items:flex-end;max-width:88%}
+.msg .bubbla{padding:12px 16px;border-radius:16px;font-size:15.5px;line-height:1.55}
+.msg.lola .bubbla{background:#F6F1E7;border-bottom-left-radius:4px;color:#1E272A}
+.msg.du{align-self:flex-end;flex-direction:row-reverse}
+.msg.du .bubbla{background:#1E272A;color:#FCFBF8;border-bottom-right-radius:4px}
+.msg-lankar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.msg-lankar a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;background:#FFFFFF;color:#1E272A;border:1px solid #C9A227;border-radius:999px;padding:8px 14px}
+.msg-lankar a:hover{background:#FBF3E0;color:#1E272A}
+.skriver{display:flex;gap:5px;padding:14px 16px}
+.skriver i{width:7px;height:7px;border-radius:50%;background:#A98636;animation:prick 1s infinite ease-in-out}
+.skriver i:nth-child(2){animation-delay:.15s}.skriver i:nth-child(3){animation-delay:.3s}
+@keyframes prick{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.chips{display:flex;gap:8px;flex-wrap:wrap;padding:0 22px 14px}
+.chip{font:inherit;font-size:13.5px;border:1px solid var(--line);background:#FFFFFF;color:#1E272A;border-radius:999px;padding:8px 14px;cursor:pointer;min-height:38px}
+.chip:hover{border-color:#C9A227;background:#FBF3E0}
+.chatt-in{display:flex;gap:10px;padding:14px 16px;border-top:1px solid var(--line);background:#FCFBF8}
+.chatt-in input{flex:1;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:999px;padding:12px 18px;background:#FFFFFF;color:#1E272A;min-width:0}
+.chatt-in input:focus{outline:2px solid #C9A227;outline-offset:1px}
+.chatt-in button{font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;border:0;border-radius:999px;background:#8C6D28;color:#FFFFFF;padding:0 22px;cursor:pointer;min-height:46px}
+.chatt-in button:hover{background:#735920}
+.lola-knapp{position:fixed;right:28px;bottom:28px;z-index:50;display:flex;align-items:center;gap:12px;padding:10px 22px 10px 10px;border-radius:999px;background:#1E272A;color:#FCFBF8;text-decoration:none;box-shadow:0 20px 40px -18px rgba(0,0,0,.6);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.lola-knapp:hover{color:#FCFBF8;transform:translateY(-2px)}
+.lola-knapp .lola-avatar{width:42px;height:42px;box-shadow:none}
+.lola-knapp .lola-avatar svg{width:24px;height:11px}
+@media (max-width:1000px){.lola-grid{grid-template-columns:1fr;gap:40px}}
+@media (max-width:640px){.chatt{height:560px}.lola-knapp{right:16px;bottom:16px;padding:8px 16px 8px 8px}.msg{max-width:96%}}
+@media (prefers-reduced-motion: reduce){.skriver i{animation:none}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="mall"><div class="sm" style="width: 100%; min-height: 100vh">
+
+<div class="koncept">Konceptskiss för en ny spanienmagasinet.se · november 2026</div>
+
+<header class="topp">
+<div class="wrap">
+<div class="logo-rad">
+<a href="#" class="logo" aria-label="Spanien Magasinet, till startsidan"><span class="logo-ord">spa<span class="enye">n<svg class="tilde" viewBox="0 0 100 44" aria-hidden="true"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span>ıen</span><span class="logo-mag">Magasinet</span></a>
+<div class="hoger"><a href="#" class="in">Logga in</a><a href="#numret" class="btn btn-guld" style="min-height: 44px; padding: 0 22px">Prenumerera</a></div>
+</div>
+<nav class="meny" aria-label="Huvudmeny">
+<a href="#senaste">Senaste numret</a><a href="#teman">Kultur</a><a href="#teman">Resor</a><a href="#teman">Mat &amp; vin</a><a href="#teman">Golf</a><a href="#flytta">Flytta till Spanien</a><a href="#ge-bort" class="jul">Ge bort i jul</a><a href="#annonsera">Annonsera</a>
+</nav>
+</div>
+</header>
+
+<div class="vader" aria-label="Vädret just nu">
+<div class="wrap">
+<small>Just nu</small>
+<span class="ort varm"><span class="grad">19°</span> Málaga, sol</span>
+<span class="mellan" aria-hidden="true"></span>
+<span class="ort kall"><span class="grad">2°</span> Stockholm, snöblandat regn</span>
+<small>17 grader varmare i Málaga</small>
+</div>
+</div>
+
+<main>
+<section class="wrap">
+<a href="#senaste" class="hero" style="display: block; color: #FFFFFF; text-decoration: none">
+<img src="bilder/a30ffb697bada80b74651b711749c6ce.jpg" alt="Palmer och livräddartorn på stranden i solnedgång vid Medelhavet">
+<div class="hero-shade"></div>
+<div class="hero-text">
+<span class="skrift" style="font-size: 60px; color: #E6CF96">Vi tar Spanien</span>
+<h1 style="font-size: 72px; max-width: 14ch; color: #FFFFFF">till Sverige</h1>
+<p style="max-width: 52ch; font-weight: 300; font-size: 19px; color: rgba(255,255,255,.92)">Ett magasin om ljuset, havet, smakerna och människorna.<br>Fyra nummer om året, att läsa långsamt.</p>
+<div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 10px">
+<span class="btn btn-ljus">Prenumerera från 195 kr</span>
+<span class="label" style="color: rgba(255,255,255,.85)">Nytt nummer i december</span>
+</div>
+</div>
+</a>
+</section>
+
+<section class="wrap" id="senaste" style="padding-top: 110px; padding-bottom: 64px">
+<div class="sek-huvud">
+<div style="display: flex; flex-direction: column; gap: 10px"><p class="label guld">September 2026</p><h2 style="font-size: 50px">I senaste numret</h2></div>
+<a href="#numret" class="lank">Få nästa nummer hem</a>
+</div>
+<div class="reportage">
+<a href="#" class="rep">
+<div class="bild" style="aspect-ratio: 4/3"><img src="bilder/3e3569c039034149601105b2ee8af6b3.jpg" alt="Dansare i traditionella spanska dräkter"><span class="las" aria-hidden="true"><svg class="las-tilde" viewBox="0 0 100 44"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span></div>
+<div class="rad"><span class="label guld">Kultur</span><span class="label">[X] min läsning</span></div>
+<h3 style="font-size: 38px">Spanska traditionella danser</h3>
+<p style="max-width: 52ch">[Ingress, två rader från artikeln i septembernumret]</p>
+<span class="vidare">Läs reportaget <i aria-hidden="true">→</i></span>
+</a>
+<a href="#" class="rep">
+<div class="bild" style="aspect-ratio: 4/4.3"><img src="bilder/d65b11c79cdb195169434c398238b0ea.jpg" alt="Kajak vid vattenfallet i Maro"><span class="las" aria-hidden="true"><svg class="las-tilde" viewBox="0 0 100 44"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span></div>
+<div class="rad"><span class="label guld">Resor</span></div>
+<h3 style="font-size: 34px">Sol, bad och Maro</h3>
+<p>[Ingress, en rad]</p>
+<span class="vidare">Läs reportaget <i aria-hidden="true">→</i></span>
+</a>
+</div>
+<div class="smala">
+<a href="#" class="smal"><div class="ram"><img src="bilder/94df993abaf083c32abbce047b747621.jpg" alt="Ett hjärta med ordet Life ritat i sanden bredvid fotspår"><span class="las" aria-hidden="true"><svg class="las-tilde" viewBox="0 0 100 44"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span></div><span class="label guld">Livsstil</span><h3 style="font-size: 24px">Sommarkänslor</h3><span class="vidare">Läs reportaget <i aria-hidden="true">→</i></span></a>
+<a href="#" class="smal"><div class="ram"><img src="bilder/2005c5cd823bd405be47c3cd2d971483.jpg" alt="Klippor och turkost vatten"><span class="las" aria-hidden="true"><svg class="las-tilde" viewBox="0 0 100 44"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span></div><span class="label guld">Ur junnumret</span><h3 style="font-size: 24px">Livskvalitet på Marsenses</h3><span class="vidare">Läs reportaget <i aria-hidden="true">→</i></span></a>
+<a href="#" class="smal"><div class="ram"><img src="bilder/bba5febb0a3daf6dc3ed3bae8801f4be.jpg" alt="Vita villor bland grönskan ovanför en badvik"><span class="annonsbricka">Annonsreportage</span><span class="las" aria-hidden="true"><svg class="las-tilde" viewBox="0 0 100 44"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span></div><span class="label">I samarbete med [mäklaren]</span><h3 style="font-size: 24px">Så hittade de sitt hem vid Medelhavet</h3><span class="vidare">Läs annonsreportaget <i aria-hidden="true">→</i></span></a>
+</div>
+</section>
+
+<aside class="wrap" aria-label="Annons" style="padding-bottom: 110px">
+<div class="annons-markering"><span>Annons</span><span>Billboard · en annonsör per vecka</span></div>
+<a href="#" class="billboard">
+<img src="bilder/53729cca40d770fc3d9fef50b11634ae.jpg" alt="">
+<div style="padding: 44px; display: flex; flex-direction: column; justify-content: center; gap: 12px">
+<p class="label guld">[Annonsörens namn]</p>
+<h3 style="font-size: 38px">[Annonsörens rubrik, till exempel ett hem vid havet]</h3>
+<p style="color: #5F6968; max-width: 44ch">[Kort text från annonsören, två rader.]</p>
+<span class="btn btn-linje" style="align-self: flex-start; margin-top: 8px">[Knapptext]</span>
+</div>
+</a>
+</aside>
+
+<section class="citat-bild">
+<img src="bilder/d6a3bccda138a5741dfa9d9e6ddac158.jpg" alt="Stråhatt mot ett glittrande hav">
+<div class="slöja"></div>
+<div class="wrap" style="position: relative; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 18px">
+<span class="skrift" style="font-size: 78px; color: #F6E7BE; -webkit-text-stroke: 1.2px #F6E7BE; text-shadow: 0 2px 18px rgba(0,0,0,.55), 0 0 2px rgba(0,0,0,.35)">Längtan</span>
+<p style="font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-size: 54px; line-height: 1.15; max-width: 20ch; text-shadow: 0 2px 24px rgba(0,0,0,.35)">efter ljuset, havet och den långa middagen</p>
+</div>
+</section>
+
+<section class="sektion" id="teman">
+<div class="wrap sek-huvud">
+<div style="display: flex; flex-direction: column; gap: 10px"><p class="label guld">Upptäck</p><h2 style="font-size: 50px">Spanien, ämne för ämne</h2></div>
+<p class="label">Håll muspekaren över randen för att stanna den</p>
+</div>
+<div class="rand">
+<div class="spar">
+<a href="#" class="tema"><img src="bilder/019d3bd5c84e49e6c71f18b939a93e97.jpg" alt="Julbelysning på Calle Larios i Málaga"><span><b>Jul i Spanien</b><small>Ljusen på Calle Larios</small></span></a>
+<a href="#" class="tema"><img src="bilder/d0355fdce2e3a822aa2a9d6ffbbcf4ec.jpg" alt="Paella med räkor"><span><b>Mat &amp; vin</b><small>Bordet och bodegan</small></span></a>
+<a href="#" class="tema"><img src="bilder/d5b7c9f042c8f6177632fc1f0fb8329d.jpg" alt="Katedralen i Málaga en kväll med uteserveringar"><span><b>Kultur</b><small>Katedraler och kvällsliv</small></span></a>
+<a href="#" class="tema"><img src="bilder/5c75bfd957bb7477db75bb5bff24cf6e.jpg" alt="Palmer och sandstrand vid Medelhavet"><span><b>Kust &amp; hav</b><small>Stränder och strandpromenader</small></span></a>
+<a href="#" class="tema"><img src="bilder/6ebb6d25ebe3ac6a231110544eba4144.jpg" alt="Vitt hus med blå fönster och en liten bar på en kullerstensgata"><span><b>Att bo i Spanien</b><small>Vita hus, blå fönster</small></span></a>
+<a href="#" class="tema"><img src="bilder/a9171f6e8a0397d7f0f79224978b0794.jpg" alt="Lila bougainvillea över en vit mur"><span><b>Resor</b><small>Byar, gränder, blomning</small></span></a>
+<a href="#" class="tema"><img src="bilder/101bcba1642b6b899caf98f2956bfccf.jpg" alt="Palm på stranden i solnedgång"><span><b>Kvällarna</b><small>När solen går ner</small></span></a>
+<a href="#" class="tema" tabindex="-1" aria-hidden="true"><img src="bilder/019d3bd5c84e49e6c71f18b939a93e97.jpg" alt=""><span><b>Jul i Spanien</b><small>Ljusen på Calle Larios</small></span></a>
+<a href="#" class="tema" tabindex="-1" aria-hidden="true"><img src="bilder/d0355fdce2e3a822aa2a9d6ffbbcf4ec.jpg" alt=""><span><b>Mat &amp; vin</b><small>Bordet och bodegan</small></span></a>
+<a href="#" class="tema" tabindex="-1" aria-hidden="true"><img src="bilder/d5b7c9f042c8f6177632fc1f0fb8329d.jpg" alt=""><span><b>Kultur</b><small>Katedraler och kvällsliv</small></span></a>
+<a href="#" class="tema" tabindex="-1" aria-hidden="true"><img src="bilder/5c75bfd957bb7477db75bb5bff24cf6e.jpg" alt=""><span><b>Kust &amp; hav</b><small>Stränder och strandpromenader</small></span></a>
+<a href="#" class="tema" tabindex="-1" aria-hidden="true"><img src="bilder/6ebb6d25ebe3ac6a231110544eba4144.jpg" alt=""><span><b>Att bo i Spanien</b><small>Vita hus, blå fönster</small></span></a>
+<a href="#" class="tema" tabindex="-1" aria-hidden="true"><img src="bilder/a9171f6e8a0397d7f0f79224978b0794.jpg" alt=""><span><b>Resor</b><small>Byar, gränder, blomning</small></span></a>
+<a href="#" class="tema" tabindex="-1" aria-hidden="true"><img src="bilder/101bcba1642b6b899caf98f2956bfccf.jpg" alt=""><span><b>Kvällarna</b><small>När solen går ner</small></span></a>
+</div>
+</div>
+</section>
+
+<section class="sektion lola-sek" id="lola">
+<div class="wrap lola-grid">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p class="label guld">Din Spanienvärd</p>
+<h2 style="font-size: 54px">Fråga Marisol</h2>
+<span class="skrift" style="font-size: 44px; color: #7F6224">hon hittar rätt åt dig</span>
+<p style="font-size: 18px; line-height: 1.75; color: #3A4446; max-width: 46ch">Drömmer du om en resa, en vinter i solen eller att flytta för gott? Berätta, så visar Marisol vägen till rätt reportage, guide och expert i magasinet.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #3A4446">
+<li>Svarar utifrån magasinets egna artiklar och guider</li>
+<li>Skickar frågor om skatt, juridik och djurhälsa vidare till experterna</li>
+<li>Är en AI-assistent och säger alltid det</li>
+</ul>
+</div>
+<div class="chatt" role="region" aria-label="Chatt med Marisol, AI-assistent">
+<div class="chatt-topp"><span class="lola-avatar"><svg viewBox="0 0 100 44" aria-hidden="true"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt"></path></svg></span><span><b>Marisol</b><small>Spanienvärd på Spanien Magasinet</small></span><span class="ai-bricka">AI</span></div>
+<div class="chatt-lista" id="chatt-lista" aria-live="polite">
+<sc-for list="{{ meddelanden }}" as="m" hint-placeholder-count="3">
+<div class="{{ m.klass }}">
+<sc-if value="{{ m.lola }}" hint-placeholder-val="{{ true }}"><span class="lola-avatar liten"><svg viewBox="0 0 100 44" aria-hidden="true"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt"></path></svg></span></sc-if>
+<div class="bubbla"><span>{{ m.text }}</span>
+<sc-if value="{{ m.harLank }}" hint-placeholder-val="{{ false }}"><div class="msg-lankar"><a href="{{ m.l1.href }}">{{ m.l1.t }}</a><sc-if value="{{ m.har2 }}" hint-placeholder-val="{{ false }}"><a href="{{ m.l2.href }}">{{ m.l2.t }}</a></sc-if></div></sc-if>
+</div>
+</div>
+</sc-for>
+<sc-if value="{{ skriver }}" hint-placeholder-val="{{ false }}"><div class="msg lola"><span class="lola-avatar liten"><svg viewBox="0 0 100 44" aria-hidden="true"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt"></path></svg></span><div class="bubbla skriver" aria-label="Marisol skriver"><i></i><i></i><i></i></div></div></sc-if>
+</div>
+<div class="chips"><sc-for list="{{ chips }}" as="c" hint-placeholder-count="4"><button type="button" class="chip" onClick="{{ c.valj }}">{{ c.t }}</button></sc-for></div>
+<div class="chatt-in"><input aria-label="Skriv till Marisol" placeholder="Skriv till Marisol, till exempel: jag vill flytta med min hund" value="{{ chattText }}" onChange="{{ chattSkriv }}"><button type="button" onClick="{{ chattSkicka }}">Skicka</button></div>
+</div>
+</div>
+</section>
+
+<section class="sektion bo" id="var-bo">
+<div class="wrap">
+<div class="sek-huvud">
+<div style="display: flex; flex-direction: column; gap: 10px"><p class="label guld">Drömmer du om att flytta?</p><h2 style="font-size: 50px">Var i Spanien ska du bo?</h2></div>
+<p style="max-width: 40ch; color: #5F6968">Fem frågor, en minut. Vi föreslår den kust som passar dig bäst.</p>
+</div>
+<div class="bo-grid">
+<div class="fragor">
+<div class="fraga"><p class="q"><i>01</i>Hur varm vill du ha vintern?</p><div class="svar"><sc-for list="{{ q1 }}" as="o" hint-placeholder-count="2"><button type="button" class="{{ o.klass }}" aria-pressed="{{ o.vald }}" onClick="{{ o.pick }}">{{ o.t }}</button></sc-for></div></div>
+<div class="fraga"><p class="q"><i>02</i>Hur ofta vill du flyga hem till Sverige?</p><div class="svar"><sc-for list="{{ q2 }}" as="o" hint-placeholder-count="2"><button type="button" class="{{ o.klass }}" aria-pressed="{{ o.vald }}" onClick="{{ o.pick }}">{{ o.t }}</button></sc-for></div></div>
+<div class="fraga"><p class="q"><i>03</i>Stadsliv eller ö-lugn?</p><div class="svar"><sc-for list="{{ q3 }}" as="o" hint-placeholder-count="2"><button type="button" class="{{ o.klass }}" aria-pressed="{{ o.vald }}" onClick="{{ o.pick }}">{{ o.t }}</button></sc-for></div></div>
+<div class="fraga"><p class="q"><i>04</i>Hur viktigt är golfen?</p><div class="svar"><sc-for list="{{ q4 }}" as="o" hint-placeholder-count="2"><button type="button" class="{{ o.klass }}" aria-pressed="{{ o.vald }}" onClick="{{ o.pick }}">{{ o.t }}</button></sc-for></div></div>
+<div class="fraga"><p class="q"><i>05</i>Vad betyder svenska grannar för dig?</p><div class="svar"><sc-for list="{{ q5 }}" as="o" hint-placeholder-count="2"><button type="button" class="{{ o.klass }}" aria-pressed="{{ o.vald }}" onClick="{{ o.pick }}">{{ o.t }}</button></sc-for></div></div>
+</div>
+<div class="resultat" aria-live="polite">
+<sc-if value="{{ bo.klar }}" hint-placeholder-val="{{ false }}">
+<div class="rbild"><img src="{{ bo.bild }}" alt="{{ bo.alt }}"></div>
+<div class="rtext">
+<p class="label guld">Din kust</p>
+<h3 style="font-size: 40px">{{ bo.namn }}</h3>
+<p style="color: #3A4446">{{ bo.text }}</p>
+<div class="fakta"><span><b>Vintern</b>{{ bo.vinter }}</span><span><b>Flyg hem</b>{{ bo.flyg }}</span><span><b>Svenskorter</b>{{ bo.svenskar }}</span><span><b>Passar dig som</b>{{ bo.passar }}</span></div>
+<div style="display: flex; gap: 18px; align-items: center; flex-wrap: wrap; margin-top: 4px"><a href="#flytta" class="btn btn-guld">Läs guiden om {{ bo.kort }}</a><button type="button" class="lank" onClick="{{ boOm }}" style="background: none; border: 0; border-bottom: 1px solid #A98636; cursor: pointer; font-family: inherit; color: #1E272A">Gör om testet</button></div>
+</div>
+</sc-if>
+<sc-if value="{{ bo.tom }}" hint-placeholder-val="{{ true }}">
+<div class="tom">
+<span class="skrift" style="font-size: 46px; color: #7F6224">Din kust</span>
+<p style="color: #3A4446">Svara på frågorna så föreslår vi Costa del Sol, Costa Blanca, Mallorca eller Kanarieöarna.</p>
+<div class="mataren" aria-hidden="true"><span style="{{ bo.matare }}"></span></div>
+<p class="label">{{ bo.kvar }}</p>
+</div>
+</sc-if>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sektion" id="flytta">
+<div class="wrap">
+<div class="sek-huvud">
+<div style="display: flex; flex-direction: column; gap: 10px"><p class="label guld">Guide</p><h2 style="font-size: 50px">Flytta till Spanien, steg för steg</h2></div>
+<p style="max-width: 44ch; color: #5F6968">Allt det du googlar på nätterna, samlat på ett ställe och skrivet av människor som har gjort resan.</p>
+</div>
+<div class="stegen">
+<a href="#" class="steg"><span class="nr">1</span><h3 style="font-size: 26px">Prova på först</h3><p>Hyr en vinter innan du köper. Många börjar med att övervintra en eller tre månader och känner efter.</p><span class="vidare">Läs mer <i aria-hidden="true">→</i></span></a>
+<a href="#" class="steg"><span class="nr">2</span><h3 style="font-size: 26px">NIE-nummer</h3><p>Ditt spanska identitetsnummer som utlänning. Det behövs för bankkonto, avtal och bostadsköp.</p><span class="vidare">Läs mer <i aria-hidden="true">→</i></span></a>
+<a href="#" class="steg"><span class="nr">3</span><h3 style="font-size: 26px">Hitta ditt hem</h3><p>Hyr först, köp sen. Räkna med skatter och avgifter utöver priset, och anlita en oberoende advokat.</p><span class="vidare">Läs mer <i aria-hidden="true">→</i></span></a>
+<a href="#" class="steg"><span class="nr">4</span><h3 style="font-size: 26px">Skriv dig i Spanien</h3><p>Bor du där mer än tre månader registrerar du dig som EU-medborgare och skriver in dig i kommunen. Glöm inte Skatteverket hemma.</p><span class="vidare">Läs mer <i aria-hidden="true">→</i></span></a>
+<a href="#" class="steg"><span class="nr">5</span><h3 style="font-size: 26px">Sjukvården</h3><p>Har du svensk pension kan du ha rätt till spansk vård via intyget S1 från Försäkringskassan. Annars behövs en privat försäkring.</p><span class="vidare">Läs mer <i aria-hidden="true">→</i></span></a>
+<a href="#" class="steg"><span class="nr">6</span><h3 style="font-size: 26px">Pension och skatt</h3><p>Var du skattar påverkar mycket. Prata med en rådgivare som kan både de svenska och de spanska reglerna.</p><span class="vidare">Läs mer <i aria-hidden="true">→</i></span></a>
+<a href="#" class="steg husdjur"><div class="hund-sida"><img class="hund-bild" src="bilder/818f3f824268032466240828d90cbd9e.jpg" alt="Glad vit och brun hund som sitter i sanden"></div><div style="display: flex; flex-direction: column; gap: 8px"><h3 style="font-size: 30px">Ta med <span class="skrift" style="font-size: 1.4em; color: #7F6224; line-height: .8; vertical-align: -.08em">pälsklingen</span> till Spanien</h3><p>Den ska följa med, självklart. Det här behöver du ordna innan resan, och det här ska du tänka på när ni väl bor där.</p><div class="lista"><span>ID-märkning med chip</span><span>Rabiesvaccin i god tid</span><span>EU-pass för sällskapsdjur</span><span>Akta tallprocessionsspinnaren</span><span>Skydd mot sandmygga och fästingar</span><span>Gräsax på sommaren</span><span>Värmen på sommaren</span></div><p class="label" style="margin-top: 6px">I samarbete med [veterinären]</p></div><span class="vidare">Läs guiden <i aria-hidden="true">→</i></span></a>
+</div>
+<div class="expert">
+<div style="display: flex; flex-direction: column; gap: 6px; max-width: 60ch"><span class="skrift" style="font-size: 40px; color: #E6CF96">Fråga experten</span><p>Advokat, skatterådgivare, mäklare och veterinär svarar på läsarnas frågor om att flytta, köpa och bo i Spanien.</p></div>
+<a href="#" class="btn btn-ljus">Ställ din fråga</a>
+</div>
+<p class="label" style="margin-top: 18px; letter-spacing: .12em; text-transform: none; font-weight: 400">Guiden är allmän information. Fråga en rådgivare om just din situation.</p>
+</div>
+</section>
+
+<section class="hej-bild" aria-label="Hälsning från redaktionen">
+<img class="hej-bg" src="bilder/65e37731cfd1d266d5926347b47b4e76.jpg" alt="Kvinna gör yoga vid havet i solnedgången">
+<div class="wrap hej-inne">
+<div class="hej-kort">
+<img class="hej-portratt" src="bilder/44ceeea48e4ddd432bd62f818010915b.png" alt="EvaLotta Pettersson, redaktör">
+<p class="label guld">Hälsning från redaktionen</p>
+<h2 style="font-size: 44px">Välkommen till vårt Spanien</h2>
+<p style="font-size: 18px; line-height: 1.75; color: #3A4446">[EvaLottas egen hälsning, tre till fyra meningar: varför magasinet finns, vad läsaren får uppleva och att redaktionen sitter på Solkusten.]</p>
+<span class="skrift" style="font-size: 50px; color: #7F6224">EvaLotta Pettersson</span>
+<p class="label">Redaktör</p>
+</div>
+</div>
+</section>
+
+<section class="citat">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
+<p class="label" style="color: #D9BE7C">Det säger våra läsare</p>
+<div class="lasare" style="text-align: left">
+<figure><blockquote style="margin: 0; font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-size: 24px; line-height: 1.35">”[Läsarcitat 1]”</blockquote><figcaption class="label" style="color: #D9BE7C">[Namn, ort]</figcaption></figure>
+<figure><blockquote style="margin: 0; font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-size: 24px; line-height: 1.35">”[Läsarcitat 2]”</blockquote><figcaption class="label" style="color: #D9BE7C">[Namn, ort]</figcaption></figure>
+<figure><blockquote style="margin: 0; font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-size: 24px; line-height: 1.35">”[Läsarcitat 3]”</blockquote><figcaption class="label" style="color: #D9BE7C">[Namn, ort]</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="sektion gava" id="ge-bort">
+<div class="wrap gava-grid">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<span class="skrift" style="font-size: 58px; color: #E8414D">Julklappen</span>
+<h2 style="font-size: 60px; color: #FFFFFF">Ge bort <em>Spanien</em></h2>
+<p style="font-size: 18px; line-height: 1.7; color: #E9DCCB; max-width: 46ch">Fyra nummer hem i brevlådan under ett helt år. Du får ett gåvobrev att lägga under granen.</p>
+<p class="label" style="color: #D9BE7C">Julklappen presenteras av [partner]</p>
+<p style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap"><span style="font-family: 'Bodoni Moda', Georgia, serif; font-size: 56px; color: #FFFFFF; line-height: 1">490 kr</span><span style="color: #E9DCCB">för ett år, frakt ingår</span></p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 6px"><a href="#" class="btn btn-ljus">Köp presentprenumeration</a></div>
+</div>
+<img class="gava-bild" src="bilder/0d6ec5dd0dd9d232696e3dbc9af1a883.png" alt="Två nummer av Spanien Magasinet med vinröd sammetsrosett">
+</div>
+</section>
+
+<section class="sektion numret" id="numret">
+<div class="wrap numret-grid">
+<div class="omslag" aria-label="Två omslag av Spanien Magasinet">
+<img class="o1" src="bilder/e2c4eb46980bf7b5d506b2533e8eb813.jpg" alt="Omslaget till junnumret 2026">
+<img class="o2" src="bilder/b6427ac0625b69f4b3b2a731f023c69d.jpg" alt="Omslaget till septembernumret 2026">
+</div>
+<div>
+<p class="label guld">Prenumerera</p>
+<h2 style="font-size: 50px; margin-top: 14px">Spanien, fyra gånger om året.</h2>
+<p style="color: #5F6968; margin-top: 14px">Nya nummer i mars, juni, september och december.</p>
+<div class="planer">
+<button type="button" class="{{ pk.digital }}" aria-pressed="{{ pk.digitalVald }}" onClick="{{ valjDigital }}"><span class="label">Digital</span><b>195 kr</b><span style="color: #5F6968; font-size: 15px">per år. Läs i mobil, platta eller dator.</span><span class="plan-ga">Köp digital <i aria-hidden="true">→</i></span></button>
+<button type="button" class="{{ pk.tryck }}" aria-pressed="{{ pk.tryckVald }}" onClick="{{ valjTryck }}"><span class="label guld">Tryckt, hem i brevlådan</span><b>490 kr</b><span style="color: #5F6968; font-size: 15px">per år, frakt ingår.</span><span class="plan-ga">Köp tryckt <i aria-hidden="true">→</i></span></button>
+</div>
+
+<sc-if value="{{ kassaOppen }}" hint-placeholder-val="{{ false }}">
+<div id="kassa" class="bokning" role="region" aria-label="Kassa" style="margin-top: 0; margin-bottom: 22px">
+<div class="bok-topp">
+<div><p class="label guld">Kassa</p><h3 style="font-size: 26px; margin-top: 6px">{{ kassa.rubrik }}</h3></div>
+<button type="button" class="stang" aria-label="Stäng kassan" onClick="{{ stangKassa }}">×</button>
+</div>
+<div class="bok-kropp">
+<sc-if value="{{ kassa.formular }}" hint-placeholder-val="{{ true }}">
+<p class="label">Snabbast</p>
+<div class="betgrid">
+<sc-for list="{{ snabb }}" as="sb" hint-placeholder-count="3"><button type="button" class="val" onClick="{{ sb.betala }}" style="justify-content: center"><b>{{ sb.t }}</b></button></sc-for>
+</div>
+<p class="label" style="margin-top: 6px">Eller fyll i och välj betalsätt</p>
+<div class="falt-grid">
+<label>Namn<input value="{{ k.namn }}" onChange="{{ kSatt.namn }}" autocomplete="name"></label>
+<label>E-post<input value="{{ k.epost }}" onChange="{{ kSatt.epost }}" autocomplete="email" type="email"></label>
+<sc-if value="{{ kassa.tryck }}" hint-placeholder-val="{{ true }}">
+<label class="hel">Adress<input value="{{ k.adress }}" onChange="{{ kSatt.adress }}" autocomplete="street-address"></label>
+<label>Postnummer<input value="{{ k.postnr }}" onChange="{{ kSatt.postnr }}" autocomplete="postal-code" inputmode="numeric"></label>
+<label>Ort<input value="{{ k.ort }}" onChange="{{ kSatt.ort }}" autocomplete="address-level2"></label>
+</sc-if>
+</div>
+<div class="betgrid">
+<sc-for list="{{ kBetal }}" as="kb" hint-placeholder-count="5"><button type="button" class="{{ kb.klass }}" aria-pressed="{{ kb.vald }}" onClick="{{ kb.pick }}"><span><b>{{ kb.t }}</b><small>{{ kb.u }}</small></span></button></sc-for>
+</div>
+<sc-if value="{{ kassa.harFel }}" hint-placeholder-val="{{ false }}"><p class="fel" role="alert">{{ kassa.fel }}</p></sc-if>
+<p class="trygg">Pris inklusive moms. Betalningen sker hos betalleverantören. Detta är en skiss: inget dras.</p>
+</sc-if>
+<sc-if value="{{ kassa.klar }}" hint-placeholder-val="{{ false }}">
+<div class="klart">
+<div class="ring"><svg width="30" height="30" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10.5l4 4 8-9"></path></svg></div>
+<h3 style="font-size: 30px">Välkommen som prenumerant!</h3>
+<p style="color: #5F6968; max-width: 50ch">{{ kassa.klarText }}</p>
+</div>
+</sc-if>
+</div>
+<sc-if value="{{ kassa.formular }}" hint-placeholder-val="{{ true }}">
+<div class="bok-fot">
+<div class="summa">Att betala<b>{{ kassa.pris }}</b></div>
+<button type="button" class="btn btn-guld" style="border: 0; cursor: pointer" onClick="{{ betalaKassa }}">{{ kassa.knapp }}</button>
+</div>
+</sc-if>
+</div>
+</sc-if>
+
+<div style="display: flex; gap: 14px; flex-wrap: wrap"><a href="#ge-bort" class="btn btn-linje">Ge bort som julklapp</a></div>
+<div class="betal" aria-label="Betalsätt"><span>Kort</span><span>Apple Pay</span><span>Google Pay</span><span>Klarna</span><span>Swish</span></div>
+</div>
+</div>
+</section>
+
+<section class="sektion wrap" id="partner">
+<div class="sek-huvud">
+<div style="display: flex; flex-direction: column; gap: 10px"><p class="label guld">Spaniens bästa, utvalt av redaktionen</p><h2 style="font-size: 40px">Våra partner</h2></div>
+<a href="#annonsera" class="lank">Bli partner</a>
+</div>
+<div class="partner-grid">
+<a href="#" class="partner" style="flex-direction: column; gap: 4px; text-decoration: none"><b style="font-weight: 500; color: #1E272A">Mäklare</b><span>[Partnerlogga]</span></a>
+<a href="#" class="partner" style="flex-direction: column; gap: 4px; text-decoration: none"><b style="font-weight: 500; color: #1E272A">Golfresor</b><span>[Partnerlogga]</span></a>
+<a href="#" class="partner" style="flex-direction: column; gap: 4px; text-decoration: none"><b style="font-weight: 500; color: #1E272A">Vin &amp; delikatesser</b><span>[Partnerlogga]</span></a>
+<a href="#" class="partner" style="flex-direction: column; gap: 4px; text-decoration: none"><b style="font-weight: 500; color: #1E272A">Hotell &amp; resor</b><span>[Partnerlogga]</span></a>
+<a href="#" class="partner" style="flex-direction: column; gap: 4px; text-decoration: none"><b style="font-weight: 500; color: #1E272A">Juridik &amp; ekonomi</b><span>[Partnerlogga]</span></a>
+</div>
+</section>
+
+<section class="sektion" id="annonsera" style="border-top: 1px solid #E4DED3">
+<div class="wrap">
+<div class="siffror">
+<div><p class="label guld">För företag</p><h2 style="font-size: 40px; margin-top: 12px">Nå svenskarna som längtar till Spanien.</h2></div>
+<div class="siffra"><b>29 000</b><span>läsare per nummer, digitalt och tryckt</span></div>
+<div class="siffra"><b>26 000</b><span>läser på Readly</span></div>
+<div class="siffra"><b>4</b><span>nummer per år</span></div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-top: 56px">
+<div style="display: flex; flex-direction: column; gap: 8px"><p class="label guld">Boka själv</p><h3 style="font-size: 32px">Välj annons, ladda upp och betala direkt</h3></div>
+<p style="font-size: 14px; color: #5F6968">Priser exklusive moms.</p>
+</div>
+<div class="format-grid" style="margin-top: 24px">
+<sc-for list="{{ format }}" as="fm" hint-placeholder-count="5">
+<div class="{{ fm.klass }}">
+<p class="label guld">{{ fm.grupp }}</p>
+<h3 style="font-size: 24px">{{ fm.namn }}</h3>
+<p>{{ fm.besk }}</p>
+<sc-if value="{{ fm.k4 }}" hint-placeholder-val="{{ false }}"><p style="color: #7F6224; font-size: 14px">Köp 4, betala 2: {{ fm.k4Text }} för hela året</p></sc-if>
+<div class="fpris"><b>{{ fm.prisText }}</b><span>per {{ fm.enhet }}</span></div>
+<button type="button" class="btn btn-guld" style="align-self: flex-start; margin-top: 8px" onClick="{{ fm.boka }}">Boka och betala</button>
+</div>
+</sc-for>
+<div class="format" style="background: #F2EDE4">
+<p class="label guld">Efter offert</p>
+<h3 style="font-size: 24px">Tema, annonsreportage och partnerpaket</h3>
+<p>"Presenteras av" på ett tema, ett annonsreportage bland reportagen eller ett partnerpaket med presentprenumerationer.</p>
+<a href="#" class="btn btn-linje" style="align-self: flex-start; margin-top: auto">Begär offert</a>
+</div>
+</div>
+
+<sc-if value="{{ oppen }}" hint-placeholder-val="{{ false }}">
+<div id="bokning" class="bokning" role="region" aria-label="Boka annons">
+<div class="bok-topp">
+<div style="flex: 1; min-width: 0">
+<p class="label guld">Boka annons</p>
+<h3 style="font-size: 30px; margin-top: 6px">{{ valt.namn }}</h3>
+<sc-if value="{{ visaSteg }}" hint-placeholder-val="{{ true }}">
+<div class="stegrad"><sc-for list="{{ stegLista }}" as="sg" hint-placeholder-count="4"><span class="{{ sg.klass }}"></span></sc-for></div>
+<p class="label" style="margin-top: 10px">{{ stegNamn }}</p>
+</sc-if>
+</div>
+<button type="button" class="stang" aria-label="Stäng bokningen" onClick="{{ stang }}">×</button>
+</div>
+
+<div class="bok-kropp">
+<sc-if value="{{ s1 }}" hint-placeholder-val="{{ true }}">
+<p>{{ valjText }}</p>
+<div class="pillgrid">
+<sc-for list="{{ perioder }}" as="pe" hint-placeholder-count="4">
+<button type="button" class="{{ pe.klass }}" aria-pressed="{{ pe.vald }}" onClick="{{ pe.pick }}"><b>{{ pe.t }}</b><small>{{ pe.u }}</small></button>
+</sc-for>
+</div>
+<sc-if value="{{ valt.k4 }}" hint-placeholder-val="{{ false }}"><p class="tips">Boka alla fyra nummer så betalar ni bara för två.</p></sc-if>
+</sc-if>
+
+<sc-if value="{{ s2 }}" hint-placeholder-val="{{ false }}">
+<p><b style="font-weight: 500">Format:</b> {{ valt.mat }}</p>
+<label class="uppladd">Ladda upp er färdiga annons<input type="file" accept=".pdf,.jpg,.jpeg,.png,.zip" onChange="{{ onFil }}"><span style="color: #1E272A">{{ filText }}</span></label>
+<button type="button" class="{{ prodKlass }}" aria-pressed="{{ prod }}" onClick="{{ togglaProd }}"><span><b>Vi tar fram annonsen åt er</b><small>Vår formgivare gör annonsen i tidningens stil. Ni godkänner korrekturet innan publicering.</small></span><span class="p">+550 kr</span></button>
+</sc-if>
+
+<sc-if value="{{ s3 }}" hint-placeholder-val="{{ false }}">
+<div class="falt-grid">
+<label>Företag<input value="{{ f.ftg }}" onChange="{{ satt.ftg }}" autocomplete="organization"></label>
+<label>Organisationsnummer<input value="{{ f.org }}" onChange="{{ satt.org }}"></label>
+<label>Kontaktperson<input value="{{ f.namn }}" onChange="{{ satt.namn }}" autocomplete="name"></label>
+<label>Telefon<input value="{{ f.tel }}" onChange="{{ satt.tel }}" autocomplete="tel" type="tel"></label>
+<label class="hel">E-post för kvitto och korrektur<input value="{{ f.epost }}" onChange="{{ satt.epost }}" autocomplete="email" type="email"></label>
+<label class="hel">Länk som annonsen ska gå till<input value="{{ f.lank }}" onChange="{{ satt.lank }}" placeholder="https://"></label>
+</div>
+</sc-if>
+
+<sc-if value="{{ s4 }}" hint-placeholder-val="{{ false }}">
+<div class="oversikt">
+<sc-for list="{{ rader }}" as="r" hint-placeholder-count="5"><div class="{{ r.klass }}"><span>{{ r.t }}</span><span>{{ r.v }}</span></div></sc-for>
+</div>
+<p class="label" style="margin-top: 8px">Betalsätt</p>
+<div class="betgrid">
+<sc-for list="{{ betalsatt }}" as="b" hint-placeholder-count="6">
+<button type="button" class="{{ b.klass }}" aria-pressed="{{ b.vald }}" onClick="{{ b.pick }}"><span><b>{{ b.t }}</b><small>{{ b.u }}</small></span></button>
+</sc-for>
+</div>
+<p class="trygg">Betalningen sker hos betalleverantören. Spanien Magasinet ser aldrig era kortuppgifter. Detta är en skiss: inget dras och ingen bokning skapas.</p>
+</sc-if>
+
+<sc-if value="{{ s5 }}" hint-placeholder-val="{{ false }}">
+<div class="klart">
+<div class="ring"><svg width="30" height="30" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10.5l4 4 8-9"></path></svg></div>
+<h3 style="font-size: 32px">Tack, annonsen är bokad.</h3>
+<p style="color: #5F6968; max-width: 52ch">{{ klartText }}</p>
+<span class="nr">{{ nr }}</span>
+</div>
+</sc-if>
+
+<sc-if value="{{ harFel }}" hint-placeholder-val="{{ false }}"><p class="fel" role="alert">{{ fel }}</p></sc-if>
+</div>
+
+<div class="bok-fot">
+<div class="summa">{{ summaEtikett }}<b>{{ summaText }}</b></div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-if value="{{ visaBak }}" hint-placeholder-val="{{ false }}"><button type="button" class="btn btn-linje" style="border: 0; cursor: pointer; background: transparent" onClick="{{ bak }}">Tillbaka</button></sc-if>
+<button type="button" class="btn btn-guld" style="border: 0; cursor: pointer" onClick="{{ nasta }}">{{ nastaText }}</button>
+</div>
+</div>
+</div>
+</sc-if>
+</div>
+</section>
+<a href="#lola" class="lola-knapp" aria-label="Fråga Marisol, vår AI-assistent"><span class="lola-avatar"><svg viewBox="0 0 100 44" aria-hidden="true"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#DE2B36" stroke-width="17" stroke-linecap="butt"></path></svg></span>Fråga Marisol</a>
+</main>
+
+<footer class="fot">
+<div class="wrap" style="padding-top: 64px; padding-bottom: 40px">
+<div class="fot-grid">
+<div><p class="logo logo-fot"><span class="logo-ord">spa<span class="enye">n<svg class="tilde" viewBox="0 0 100 44" aria-hidden="true"><path d="M9 34C13 12 32 6 49 19S82 33 91 9" fill="none" stroke="#EF4650" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round"></path></svg></span>ıen</span><span class="logo-mag">Magasinet</span></p><p style="margin-top: 14px; max-width: 34ch">Kultur, resor, mat, golf och vin för dig som längtar till Spanien. Redaktion på Solkusten.</p></div>
+<nav aria-label="Läs"><h4>Läs</h4><a href="#senaste">Senaste numret</a><a href="#teman">Teman</a><a href="#">Om oss</a></nav>
+<nav aria-label="Prenumerera"><h4>Prenumerera</h4><a href="#numret">Digital eller tryckt</a><a href="#ge-bort">Ge bort</a><a href="#">Kundservice</a></nav>
+<nav aria-label="Följ oss"><h4>Följ oss</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Svenska Magasinet</a></nav>
+</div>
+<div style="margin-top: 48px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #A8A69E"><span>© 2026 Spanien Magasinet</span><span>Konceptskiss · texter inom hakparentes fylls i</span></div>
+</div>
+</footer>
+
+</div>
+</x-dc></template>
+<script src="https://cdn.jsdelivr.net/npm/morphdom@2.7.4/dist/morphdom-umd.min.js"></script>
+<script src="render.js"></script>
+<script>
+var FORMAT = [
+  { id: 'helsida', grupp: 'I tidningen', namn: 'Helsida', besk: 'Utfallande, vid redaktionellt material.', pris: 27500, enhet: 'nummer', typ: 'tryck', k4: true, mat: 'Tryckfärdig PDF, 210 × 297 mm + 3 mm utfall, CMYK 300 dpi' },
+  { id: 'halvsida', grupp: 'I tidningen', namn: 'Halvsida', besk: 'Liggande eller stående.', pris: 16500, enhet: 'nummer', typ: 'tryck', k4: true, mat: 'Tryckfärdig PDF i halvsidesformat, CMYK 300 dpi' },
+  { id: 'kvartssida', grupp: 'I tidningen', namn: 'Kvartssida', besk: 'Ett bra sätt att synas i varje nummer.', pris: 7700, enhet: 'nummer', typ: 'tryck', k4: false, mat: 'Tryckfärdig PDF i kvartssidesformat, CMYK 300 dpi' },
+  { id: 'toppbanner', grupp: 'På sajten', namn: 'Toppbanner', besk: 'Billboard på startsidan, en annonsör åt gången.', pris: 22000, enhet: 'månad', typ: 'webb', k4: false, mat: 'Bild 1600 × 800 px, rubrik, kort text och länk' },
+  { id: 'nyhetsbrev', grupp: 'Nyhetsbrev', namn: 'Banner i nyhetsbrevet', besk: 'Er bild och länk till alla prenumeranter.', pris: 5500, enhet: 'utskick', typ: 'brev', k4: false, mat: 'Bild 1200 × 400 px och länk' }
+];
+var PERIODER = {
+  tryck: [
+    { id: 't1', t: 'Mars 2027', u: 'Nummer 1' },
+    { id: 't2', t: 'Juni 2027', u: 'Nummer 2' },
+    { id: 't3', t: 'September 2027', u: 'Nummer 3' },
+    { id: 't4', t: 'December 2027', u: 'Nummer 4' }
+  ],
+  webb: [
+    { id: 'w1', t: 'Januari', u: '2027' }, { id: 'w2', t: 'Februari', u: '2027' }, { id: 'w3', t: 'Mars', u: '2027' }, { id: 'w4', t: 'April', u: '2027' },
+    { id: 'w5', t: 'Maj', u: '2027' }, { id: 'w6', t: 'Juni', u: '2027' }, { id: 'w7', t: 'Juli', u: '2027' }, { id: 'w8', t: 'Augusti', u: '2027' }
+  ],
+  brev: [
+    { id: 'b1', t: 'Januari', u: 'Utskick 2027' }, { id: 'b2', t: 'Februari', u: 'Utskick 2027' }, { id: 'b3', t: 'Mars', u: 'Utskick 2027' }, { id: 'b4', t: 'April', u: 'Utskick 2027' },
+    { id: 'b5', t: 'Maj', u: 'Utskick 2027' }, { id: 'b6', t: 'Juni', u: 'Utskick 2027' }, { id: 'b7', t: 'Juli', u: 'Utskick 2027' }, { id: 'b8', t: 'Augusti', u: 'Utskick 2027' }
+  ]
+};
+var BETAL = [
+  { id: 'kort', t: 'Kort', u: 'Visa, Mastercard' },
+  { id: 'apple', t: 'Apple Pay', u: 'Med Face ID' },
+  { id: 'google', t: 'Google Pay', u: 'Med telefonen' },
+  { id: 'klarna', t: 'Klarna', u: 'Faktura eller delbetalning' },
+  { id: 'swish', t: 'Swish', u: 'Direkt från banken' },
+  { id: 'faktura', t: 'Faktura', u: '30 dagar, för företag' }
+];
+var KBETAL = [
+  { id: 'kort', t: 'Kort', u: 'Visa, Mastercard' },
+  { id: 'apple', t: 'Apple Pay', u: 'Med Face ID' },
+  { id: 'google', t: 'Google Pay', u: 'Med telefonen' },
+  { id: 'klarna', t: 'Klarna', u: 'Betala senare' },
+  { id: 'swish', t: 'Swish', u: 'Direkt från banken' }
+];
+var BO = {
+  sol: { namn: 'Costa del Sol', kort: 'Costa del Sol', bild: 'bilder/5c75bfd957bb7477db75bb5bff24cf6e.jpg', alt: 'Palmer och sandstrand vid Medelhavet', text: 'Málaga med kultur och restauranger, mild vinter och flyg hem nästan varje dag. Här finns golfbanorna och den svenska gemenskapen.', vinter: 'Mild, ofta runt 17–18 grader', flyg: 'Täta direktflyg från Málaga', svenskar: 'Fuengirola, Marbella, Nerja', passar: 'Stadsälskare och golfare' },
+  blanca: { namn: 'Costa Blanca', kort: 'Costa Blanca', bild: 'bilder/6ebb6d25ebe3ac6a231110544eba4144.jpg', alt: 'Vitt hus med blå fönster på en kullerstensgata', text: 'Vita byar, långa stränder och lite lägre priser. Nära till Alicante och flyget hem, och många svenskar redan på plats.', vinter: 'Mild och torr', flyg: 'Direktflyg från Alicante', svenskar: 'Torrevieja, Altea, Benidorm', passar: 'Den som vill ha mycket för pengarna' },
+  mallorca: { namn: 'Mallorca', kort: 'Mallorca', bild: 'bilder/2005c5cd823bd405be47c3cd2d971483.jpg', alt: 'Klippor och turkost vatten', text: 'Ö-liv med Palmas gamla stadskärna, bergsbyar och turkosa vikar. Svalare vintrar, men en ö du aldrig tröttnar på.', vinter: 'Svalare, men soligt', flyg: 'Täta flyg på sommaren, färre på vintern', svenskar: 'Palma, Port d’Andratx', passar: 'Den som vill ha ö-känsla och kultur' },
+  kanarie: { namn: 'Kanarieöarna', kort: 'Kanarieöarna', bild: 'bilder/101bcba1642b6b899caf98f2956bfccf.jpg', alt: 'Palm på stranden i solnedgång', text: 'Sommarvärme i januari. Längre flygresa, men öarna har tagit emot svenska vintergäster i generationer.', vinter: 'Sommarvarm året runt', flyg: 'Längre resa, cirka fem timmar', svenskar: 'Gran Canaria, Teneriffa', passar: 'Den som fryser i Sverige' }
+};
+var FRAGOR = {
+  q1: [{ id: 'a', t: 'Mild räcker', p: { sol: 2, blanca: 2, mallorca: 1 } }, { id: 'b', t: 'Sommarvarm året runt', p: { kanarie: 3 } }],
+  q2: [{ id: 'a', t: 'Ofta, med direktflyg', p: { sol: 2, blanca: 2, mallorca: 1 } }, { id: 'b', t: 'En längre resa gör inget', p: { kanarie: 2, mallorca: 1 } }],
+  q3: [{ id: 'a', t: 'Stad, kultur och restauranger', p: { sol: 2, mallorca: 1 } }, { id: 'b', t: 'Lugn och ö-känsla', p: { mallorca: 2, kanarie: 2 } }, { id: 'c', t: 'Vit by nära havet', p: { blanca: 2, sol: 1 } }],
+  q4: [{ id: 'a', t: 'Golf varje vecka', p: { sol: 2, blanca: 1 } }, { id: 'b', t: 'Inte så viktigt', p: { mallorca: 1, kanarie: 1 } }],
+  q5: [{ id: 'a', t: 'Gärna svenska grannar', p: { blanca: 2, sol: 1, kanarie: 1 } }, { id: 'b', t: 'Hellre helt spanskt', p: { mallorca: 2 } }]
+};
+var LOLA = [
+  { ord: ['hund', ' katt', 'husdjur', 'valp', 'pälskling'], svar: 'Pälsklingen ska förstås med! Börja med chip, rabiesvaccin och EU-pass i god tid. Och lär dig känna igen tallprocessionsspinnaren, larverna som är farliga för hundar på vårvintern. Veterinären går igenom allt i guiden.', l1: { t: 'Pälsklingen', href: '#flytta' }, l2: { t: 'Fråga veterinären', href: '#flytta' } },
+  { ord: ['skatt', 'pension', 'deklar', 'juridik', 'advokat', 'arv', 'testamente', 'försäkring', 'lån'], svar: 'Det är en viktig fråga, och den förtjänar ett svar från någon som kan just din situation. Jag ger inga råd om skatt eller juridik själv, men våra experter svarar på läsarnas frågor.', l1: { t: 'Fråga experten', href: '#flytta' }, l2: { t: 'Pension och skatt', href: '#flytta' } },
+  { ord: ['flytta', 'bo ', 'bosätta', 'vart', 'var ska', 'kust', 'övervintra', 'vinter', 'köpa hus', 'köpa bostad', 'lägenhet', 'hus'], svar: 'Vad roligt! Gör vårt test först, fem frågor så föreslår vi den kust som passar dig. Sedan har vi en guide steg för steg, från NIE-nummer till sjukvård.', l1: { t: 'Gör testet', href: '#var-bo' }, l2: { t: 'Flyttguiden', href: '#flytta' } },
+  { ord: ['mat', 'vin', 'recept', 'tapas', 'paella', 'restaurang', 'äta'], svar: 'Då ska du in under Mat och vin, där finns bordet, bodegan och recept att laga hemma i Sverige när längtan blir för stor.', l1: { t: 'Mat och vin', href: '#teman' }, l2: { t: 'Senaste numret', href: '#senaste' } },
+  { ord: ['jul', 'present', 'julklapp', 'ge bort', 'gåva'], svar: 'Ge bort Spanien! En presentprenumeration med fyra nummer hem i brevlådan, och ett gåvobrev att lägga under granen. 490 kronor för ett helt år.', l1: { t: 'Ge bort i jul', href: '#ge-bort' } },
+  { ord: ['prenumer', 'tidning', 'pris', 'kostar', 'readly', 'digital'], svar: 'Du kan läsa oss digitalt för 195 kronor om året, eller få tidningen hem i brevlådan för 490 kronor. Fyra nummer om året, att läsa långsamt.', l1: { t: 'Prenumerera', href: '#numret' } },
+  { ord: ['annons', 'synas', 'marknadsför', 'samarbete', 'partner'], svar: 'Vad kul att du vill synas hos oss! Du kan boka och betala en annons direkt, eller höra av dig om ett partnerpaket.', l1: { t: 'Annonsera', href: '#annonsera' } },
+  { ord: ['resa', 'semester', 'málaga', 'malaga', 'sevilla', 'granada', 'strand', 'se ', 'göra', 'tips', 'golf', 'kultur'], svar: 'Åh, då har jag läsning åt dig. I senaste numret skriver vi om Maro, sol och bad, och om de spanska dansernas historia. Och i Upptäck hittar du Spanien ämne för ämne.', l1: { t: 'Senaste numret', href: '#senaste' }, l2: { t: 'Upptäck', href: '#teman' } }
+];
+var LOLA_ANNARS = { svar: 'Det vet jag inte riktigt än, men jag lär mig av magasinet hela tiden. Vill du att jag tipsar om något av det här?', l1: { t: 'Senaste numret', href: '#senaste' }, l2: { t: 'Flyttguiden', href: '#flytta' } };
+var LOLA_BREV = { svar: 'En sak till: vill du få Spanienlängtan i mejlen varje söndag morgon? Ett kort brev med det bästa från redaktionen.', l1: { t: 'Ja tack, söndagsbrevet', href: '#numret' } };
+var LOLA_CHIPS = ['Jag vill flytta till Spanien', 'Ta med pälsklingen till Spanien', 'Tips inför resan', 'En julklapp'];
+function lolaSvar(text) {
+  var t = ' ' + text.toLowerCase() + ' ';
+  for (var i = 0; i < LOLA.length; i++) {
+    for (var j = 0; j < LOLA[i].ord.length; j++) { if (t.indexOf(LOLA[i].ord[j]) >= 0) return LOLA[i]; }
+  }
+  return LOLA_ANNARS;
+}
+var STEGNAMN = ['Välj period', 'Annonsmaterial', 'Era uppgifter', 'Översikt och betalning'];
+var PROD = 550, MOMS = 0.25;
+function kr(n) { return Math.round(n).toLocaleString('sv-SE') + ' kr'; }
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { oppen: false, steg: 1, fmt: 'helsida', per: [], prod: false, fil: '', bet: 'kort', fel: '', nr: '',
+      f: { ftg: '', org: '', namn: '', tel: '', epost: '', lank: '' },
+      bo: {}, chattText: '', skriver: false, antalFragor: 0, meddelanden: [{ fran: 'lola', text: '¡Hola! Jag är Marisol, Spanien Magasinets AI-värd. Vad drömmer du om, en resa, en vinter i solen eller att flytta för gott?' }], plan: '', kSteg: 1, kBet: 'kort', kFel: '', kMetod: '', k: { namn: '', epost: '', adress: '', postnr: '', ort: '' } };
+  }
+  valt() { var id = this.state.fmt; return FORMAT.filter(function (x) { return x.id === id; })[0]; }
+  pris() {
+    var v = this.valt(), n = this.state.per.length, bas = v.pris * n;
+    var rab = (v.k4 && n === 4) ? v.pris * 2 : 0;
+    var prod = this.state.prod ? PROD : 0, netto = bas - rab + prod;
+    return { n: n, bas: bas, rab: rab, prod: prod, netto: netto, moms: netto * MOMS, tot: netto * (1 + MOMS) };
+  }
+  oppnaKassa(plan) {
+    this.setState({ plan: plan, kSteg: 1, kFel: '' });
+    setTimeout(function () { var el = document.getElementById('kassa'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 60);
+  }
+  boka(id) {
+    this.setState({ oppen: true, steg: 1, fmt: id, per: [], fel: '', nr: '' });
+    setTimeout(function () { var el = document.getElementById('bokning'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 60);
+  }
+  nasta() {
+    var s = this.state;
+    if (s.steg === 5) { this.setState({ oppen: false }); return; }
+    if (s.steg === 1 && s.per.length === 0) { this.setState({ fel: 'Välj minst en period.' }); return; }
+    if (s.steg === 2 && !s.fil && !s.prod) { this.setState({ fel: 'Ladda upp en fil eller välj att vi tar fram annonsen.' }); return; }
+    if (s.steg === 3 && (!s.f.ftg || !s.f.namn || s.f.epost.indexOf('@') < 1)) { this.setState({ fel: 'Fyll i företag, kontaktperson och en giltig e-postadress.' }); return; }
+    if (s.steg === 4) { this.setState({ steg: 5, fel: '', nr: 'SM-2026-' + String(1000 + Math.floor(Math.random() * 9000)) }); return; }
+    this.setState({ steg: s.steg + 1, fel: '' });
+  }
+  lolaFraga(text) {
+    var self = this, t = (text || '').trim();
+    if (!t || this.state.skriver) return;
+    var n = this.state.antalFragor + 1;
+    this.setState({ meddelanden: this.state.meddelanden.concat([{ fran: 'du', text: t }]), chattText: '', skriver: true, antalFragor: n });
+    this.lolaRulla();
+    setTimeout(function () {
+      var r = lolaSvar(t), ny = [{ fran: 'lola', text: r.svar, l1: r.l1, l2: r.l2 }];
+      if (n === 3) ny.push({ fran: 'lola', text: LOLA_BREV.svar, l1: LOLA_BREV.l1 });
+      self.setState({ meddelanden: self.state.meddelanden.concat(ny), skriver: false });
+      self.lolaRulla();
+    }, 900);
+  }
+  lolaRulla() {
+    setTimeout(function () { var el = document.getElementById('chatt-lista'); if (el) el.scrollTop = el.scrollHeight; }, 40);
+  }
+  renderVals() {
+    var self = this, s = this.state, v = this.valt(), p = this.pris();
+    var lista = PERIODER[v.typ];
+    var format = FORMAT.map(function (x) {
+      return { namn: x.namn, grupp: x.grupp, besk: x.besk, enhet: x.enhet, k4: x.k4, k4Text: kr(x.pris * 2), prisText: kr(x.pris),
+        klass: (s.oppen && s.fmt === x.id) ? 'format vald' : 'format', boka: function () { self.boka(x.id); } };
+    });
+    var perioder = lista.map(function (x) {
+      var vald = s.per.indexOf(x.id) >= 0;
+      return { t: x.t, u: x.u, vald: vald, klass: vald ? 'val vald' : 'val',
+        pick: function () { var per = vald ? s.per.filter(function (y) { return y !== x.id; }) : s.per.concat([x.id]); self.setState({ per: per, fel: '' }); } };
+    });
+    var betalsatt = BETAL.map(function (x) {
+      var vald = s.bet === x.id;
+      return { t: x.t, u: x.u, vald: vald, klass: vald ? 'val vald' : 'val', pick: function () { self.setState({ bet: x.id }); } };
+    });
+    var valdaNamn = lista.filter(function (x) { return s.per.indexOf(x.id) >= 0; }).map(function (x) { return x.t; }).join(', ');
+    var rader = [
+      { t: v.namn, v: p.n + ' × ' + kr(v.pris), klass: 'orad' },
+      { t: 'Period', v: valdaNamn || 'Ingen vald', klass: 'orad' }
+    ];
+    if (p.rab) rader.push({ t: 'Köp 4, betala 2', v: '−' + kr(p.rab), klass: 'orad' });
+    if (p.prod) rader.push({ t: 'Vi tar fram annonsen', v: kr(p.prod), klass: 'orad' });
+    rader.push({ t: 'Summa exkl. moms', v: kr(p.netto), klass: 'orad' });
+    rader.push({ t: 'Moms 25 %', v: kr(p.moms), klass: 'orad' });
+    rader.push({ t: 'Att betala', v: kr(p.tot), klass: 'orad total' });
+    var betNamn = BETAL.filter(function (x) { return x.id === s.bet; })[0].t;
+    function kSatt(n) { return function (e) { var k = Object.assign({}, self.state.k); k[n] = e.target.value; self.setState({ k: k, kFel: '' }); }; }
+    function satt(k) { return function (e) { var f = Object.assign({}, self.state.f); f[k] = e.target.value; self.setState({ f: f, fel: '' }); }; }
+    var boSvar = s.bo, antal = Object.keys(boSvar).length;
+    function boLista(q) { return FRAGOR[q].map(function (o) { var v = boSvar[q] === o.id; return { t: o.t, vald: v, klass: v ? 'val vald' : 'val', pick: function () { var b = Object.assign({}, self.state.bo); b[q] = o.id; self.setState({ bo: b }); } }; }); }
+    var poang = { sol: 0, blanca: 0, mallorca: 0, kanarie: 0 };
+    Object.keys(boSvar).forEach(function (q) { var o = FRAGOR[q].filter(function (x) { return x.id === boSvar[q]; })[0]; Object.keys(o.p).forEach(function (r) { poang[r] += o.p[r]; }); });
+    var bast = ['sol', 'blanca', 'mallorca', 'kanarie'].reduce(function (a, b) { return poang[b] > poang[a] ? b : a; }, 'sol');
+    var bo = Object.assign({}, BO[bast], { klar: antal === 5, tom: antal < 5, matare: 'width:' + (antal * 20) + '%', kvar: antal === 0 ? 'Fem frågor kvar' : (5 - antal === 1 ? 'En fråga kvar' : (5 - antal) + ' frågor kvar') });
+    return {
+      q1: boLista('q1'), q2: boLista('q2'), q3: boLista('q3'), q4: boLista('q4'), q5: boLista('q5'), bo: bo,
+      meddelanden: s.meddelanden.map(function (m) { return { klass: m.fran === 'lola' ? 'msg lola' : 'msg du', lola: m.fran === 'lola', text: m.text, harLank: !!m.l1, har2: !!m.l2, l1: m.l1 || { t: '', href: '#' }, l2: m.l2 || { t: '', href: '#' } }; }),
+      skriver: s.skriver, chattText: s.chattText,
+      chips: LOLA_CHIPS.map(function (c) { return { t: c, valj: function () { self.lolaFraga(c); } }; }),
+      chattSkriv: function (e) { self.setState({ chattText: e.target.value }); },
+      chattSkicka: function () { self.lolaFraga(self.state.chattText); },
+      boOm: function () { self.setState({ bo: {} }); },
+      format: format, oppen: s.oppen, valt: v, perioder: perioder, betalsatt: betalsatt, rader: rader, f: s.f, prod: s.prod, nr: s.nr,
+      satt: { ftg: satt('ftg'), org: satt('org'), namn: satt('namn'), tel: satt('tel'), epost: satt('epost'), lank: satt('lank') },
+      s1: s.steg === 1, s2: s.steg === 2, s3: s.steg === 3, s4: s.steg === 4, s5: s.steg === 5,
+      visaSteg: s.steg < 5, visaBak: s.steg > 1 && s.steg < 5,
+      stegLista: STEGNAMN.map(function (n, i) { return { klass: i < s.steg ? 'stegdel gjord' : 'stegdel' }; }),
+      stegNamn: s.steg < 5 ? 'Steg ' + s.steg + ' av 4 · ' + STEGNAMN[s.steg - 1] : '',
+      valjText: v.typ === 'tryck' ? 'Välj ett eller flera nummer av tidningen.' : (v.typ === 'webb' ? 'Välj en eller flera månader.' : 'Välj ett eller flera utskick.'),
+      filText: s.fil ? 'Vald fil: ' + s.fil : 'PDF, JPG, PNG eller ZIP',
+      prodKlass: s.prod ? 'val vald' : 'val',
+      onFil: function (e) { var fl = e.target.files && e.target.files[0]; self.setState({ fil: fl ? fl.name : '', fel: '' }); },
+      togglaProd: function () { self.setState({ prod: !self.state.prod, fel: '' }); },
+      harFel: !!s.fel, fel: s.fel,
+      summaEtikett: s.steg === 5 ? 'Bokningen är klar' : (p.n ? 'Att betala inkl. moms' : 'Pris exkl. moms'),
+      summaText: s.steg === 5 ? kr(p.tot) : (p.n ? kr(p.tot) : kr(v.pris) + ' per ' + v.enhet),
+      nastaText: s.steg === 4 ? (s.bet === 'faktura' ? 'Boka mot faktura' : 'Betala ' + kr(p.tot) + ' med ' + betNamn) : (s.steg === 5 ? 'Stäng' : 'Fortsätt'),
+      klartText: (s.bet === 'faktura' ? 'Fakturan skickas till ' + (s.f.epost || 'er e-post') + '.' : 'Betalningen med ' + betNamn + ' är genomförd.') + ' Kvitto och bokningsbekräftelse kommer per e-post. ' + (s.prod ? 'Vår formgivare skickar ett korrektur inom två arbetsdagar.' : 'Vi granskar materialet och hör av oss om något behöver justeras.'),
+      nasta: function () { self.nasta(); },
+      bak: function () { self.setState({ steg: Math.max(1, self.state.steg - 1), fel: '' }); },
+      stang: function () { self.setState({ oppen: false }); },
+      pk: { digital: s.plan === 'digital' ? 'plan vald' : 'plan', tryck: s.plan === 'tryck' ? 'plan vald' : 'plan', digitalVald: s.plan === 'digital', tryckVald: s.plan === 'tryck' },
+      valjDigital: function () { self.oppnaKassa('digital'); },
+      valjTryck: function () { self.oppnaKassa('tryck'); },
+      kassaOppen: !!s.plan,
+      kassa: {
+        rubrik: s.plan === 'tryck' ? 'Tryckt prenumeration, ett år' : 'Digital prenumeration, ett år',
+        pris: s.plan === 'tryck' ? '490 kr' : '195 kr', tryck: s.plan === 'tryck',
+        formular: s.kSteg === 1, klar: s.kSteg === 2, harFel: !!s.kFel, fel: s.kFel,
+        knapp: 'Betala ' + (s.plan === 'tryck' ? '490 kr' : '195 kr') + ' med ' + KBETAL.filter(function (x) { return x.id === s.kBet; })[0].t,
+        klarText: 'Betalningen med ' + (s.kMetod || 'kort') + ' är klar. ' + (s.plan === 'tryck' ? 'Första numret kommer hem i brevlådan, och ett kvitto skickas till ' + (s.k.epost || 'din e-post') + '.' : 'Inloggningen till den digitala tidningen skickas till ' + (s.k.epost || 'din e-post') + '.')
+      },
+      k: s.k,
+      kSatt: { namn: kSatt('namn'), epost: kSatt('epost'), adress: kSatt('adress'), postnr: kSatt('postnr'), ort: kSatt('ort') },
+      kBetal: KBETAL.map(function (x) { var v = s.kBet === x.id; return { t: x.t, u: x.u, vald: v, klass: v ? 'val vald' : 'val', pick: function () { self.setState({ kBet: x.id, kFel: '' }); } }; }),
+      snabb: [{ t: 'Apple Pay' }, { t: 'Google Pay' }, { t: 'Klarna' }].map(function (x) { return { t: x.t, betala: function () { self.setState({ kSteg: 2, kMetod: x.t, kFel: '' }); } }; }),
+      betalaKassa: function () {
+        var k = self.state.k, tr = self.state.plan === 'tryck';
+        if (!k.namn || k.epost.indexOf('@') < 1 || (tr && (!k.adress || !k.postnr || !k.ort))) { self.setState({ kFel: tr ? 'Fyll i namn, e-post och adress så vi vet vart tidningen ska.' : 'Fyll i namn och e-post.' }); return; }
+        self.setState({ kSteg: 2, kMetod: KBETAL.filter(function (x) { return x.id === self.state.kBet; })[0].t, kFel: '' });
+      },
+      stangKassa: function () { self.setState({ plan: '', kSteg: 1, kFel: '' }); }
+    };
+  }
+}
+</script>
+<script>starta(Component);</script>
+</body>
+</html>
