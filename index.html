@@ -356,6 +356,7 @@ button.plan:hover .plan-ga i{transform:translateX(6px)}
 .resa-anmal .rad input{flex:1;min-width:200px}
 @media (max-width:1000px){.hjalp-grid,.resor-grid{grid-template-columns:1fr 1fr}.resa-anmal{grid-template-columns:1fr}}
 @media (max-width:640px){.hjalp-grid,.resor-grid{grid-template-columns:1fr}.resa-anmal select{width:100%}}
+.sm .msg.notis{justify-content:center;align-self:center;max-width:100%}.sm .msg.notis .bubbla{background:none;border:0;box-shadow:none;padding:2px 10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7F6224;text-align:center}
 </style>
 </head>
 <body>
@@ -490,6 +491,7 @@ button.plan:hover .plan-ga i{transform:translateX(6px)}
 <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #3A4446">
 <li>Svarar utifrån magasinets egna artiklar och guider</li>
 <li>Skickar frågor om skatt, juridik och djurhälsa vidare till experterna</li>
+<li>Kan hon inte svara skickas frågan till redaktionen, så att hon kan svara nästa gång</li>
 <li>Är en AI-assistent och säger alltid det</li>
 </ul>
 </div>
@@ -968,7 +970,7 @@ var LOLA = [
   { ord: ['annons', 'synas', 'marknadsför', 'samarbete', 'partner'], svar: 'Vad kul att du vill synas hos oss! Du kan boka och betala en annons direkt, eller höra av dig om ett partnerpaket.', l1: { t: 'Annonsera', href: '#annonsera' } },
   { ord: ['resa', 'semester', 'málaga', 'malaga', 'sevilla', 'granada', 'strand', 'se ', 'göra', 'tips', 'golf', 'kultur'], svar: 'Åh, då har jag läsning åt dig. I senaste numret skriver vi om Maro, sol och bad, och om de spanska dansernas historia. Och i Upptäck hittar du Spanien ämne för ämne.', l1: { t: 'Senaste numret', href: '#senaste' }, l2: { t: 'Upptäck', href: '#teman' } }
 ];
-var LOLA_ANNARS = { svar: 'Det vet jag inte riktigt än, men jag lär mig av magasinet hela tiden. Vill du att jag tipsar om något av det här?', l1: { t: 'Senaste numret', href: '#senaste' }, l2: { t: 'Flyttguiden', href: '#flytta' } };
+var LOLA_ANNARS = { svar: 'Bra fråga! Den kan jag inte svara på än, så jag har skickat den vidare till redaktionen. Då kan jag svara nästa gång någon undrar. Under tiden kanske det här hjälper:', l1: { t: 'Senaste numret', href: '#senaste' }, l2: { t: 'Flyttguiden', href: '#flytta' } };
 var LOLA_BREV = { svar: 'En sak till: vill du ha Veckobrevet? Ett kort brev varje vecka med det bästa från redaktionen, gratis.', l1: { t: 'Ja tack, Veckobrevet', href: '#veckobrevet' } };
 var LOLA_CHIPS = ['Jag vill flytta till Spanien', 'Ta med pälsklingen till Spanien', 'Tips inför resan', 'En julklapp'];
 function lolaSvar(text) {
@@ -1021,6 +1023,7 @@ class Component extends DCLogic {
     this.lolaRulla();
     setTimeout(function () {
       var r = lolaSvar(t), ny = [{ fran: 'lola', text: r.svar, l1: r.l1, l2: r.l2 }];
+      if (r === LOLA_ANNARS) ny.push({ fran: 'notis', text: 'Frågan har skickats till redaktionen' });
       if (n === 3) ny.push({ fran: 'lola', text: LOLA_BREV.svar, l1: LOLA_BREV.l1 });
       self.setState({ meddelanden: self.state.meddelanden.concat(ny), skriver: false });
       self.lolaRulla();
@@ -1066,7 +1069,7 @@ class Component extends DCLogic {
     var bo = Object.assign({}, BO[bast], { klar: antal === 5, tom: antal < 5, matare: 'width:' + (antal * 20) + '%', kvar: antal === 0 ? 'Fem frågor kvar' : (5 - antal === 1 ? 'En fråga kvar' : (5 - antal) + ' frågor kvar') });
     return {
       q1: boLista('q1'), q2: boLista('q2'), q3: boLista('q3'), q4: boLista('q4'), q5: boLista('q5'), bo: bo,
-      meddelanden: s.meddelanden.map(function (m) { return { klass: m.fran === 'lola' ? 'msg lola' : 'msg du', lola: m.fran === 'lola', text: m.text, harLank: !!m.l1, har2: !!m.l2, l1: m.l1 || { t: '', href: '#' }, l2: m.l2 || { t: '', href: '#' } }; }),
+      meddelanden: s.meddelanden.map(function (m) { return { klass: m.fran === 'lola' ? 'msg lola' : (m.fran === 'notis' ? 'msg notis' : 'msg du'), lola: m.fran === 'lola', text: m.text, harLank: !!m.l1, har2: !!m.l2, l1: m.l1 || { t: '', href: '#' }, l2: m.l2 || { t: '', href: '#' } }; }),
       skriver: s.skriver, chattText: s.chattText,
       chips: LOLA_CHIPS.map(function (c) { return { t: c, valj: function () { self.lolaFraga(c); } }; }),
       chattSkriv: function (e) { self.setState({ chattText: e.target.value }); },
