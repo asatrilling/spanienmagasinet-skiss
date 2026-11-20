@@ -595,7 +595,7 @@ button.plan:hover .plan-ga i{transform:translateX(6px)}
 <div class="hjalp-filter" role="group" aria-label="Välj kategori"><sc-for list="{{ hjFilter }}" as="f" hint-placeholder-count="6"><button type="button" class="{{ f.klass }}" aria-pressed="{{ f.vald }}" onClick="{{ f.pick }}">{{ f.t }}</button></sc-for></div>
 <div class="hjalp-grid">
 <sc-for list="{{ hjLista }}" as="h" hint-placeholder-count="6">
-<div class="hjalp-kort"><p class="label guld">{{ h.kat }}</p><h3 style="font-size: 24px">{{ h.namn }}</h3><p class="ort">{{ h.ort }}</p><span class="sv">Kan Spanien</span><a href="#">Kontakta <i aria-hidden="true">→</i></a></div>
+<div class="hjalp-kort"><p class="label guld">{{ h.kat }}</p><h3 style="font-size: 24px">{{ h.namn }}</h3><span class="sv">Kan Spanien</span><a href="#">Kontakta <i aria-hidden="true">→</i></a></div>
 </sc-for>
 </div>
 <div class="hjalp-cta"><div style="display: flex; flex-direction: column; gap: 4px"><h3 style="font-size: 26px">Hjälper du svenskar att flytta till Spanien?</h3><p style="color: #5F6968">Synas här och i Marisols tips hela året, från [pris] kr per år.</p></div><a href="#annonsera" class="btn btn-guld">Bli listad</a></div>
